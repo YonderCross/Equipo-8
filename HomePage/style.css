@@ -1,0 +1,18 @@
+.Homepage {
+    height: 800px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    background-size: cover; /*especifica el tamaño de las imágenes de fondo. COVER: área de posicionamiento de fondo.*/
+    background-position: center;
+    background-attachment: fixed; /* determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.*/
+    background-image: url(../img/dog-green.jpg)  
+}   
+
+.Title_Home{
+    font-size: 28px;
+    font-family:var(--primaryFont);
+    color: rgb(230, 250, 253);
+    background-position: center;
+}
