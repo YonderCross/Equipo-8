@@ -1,0 +1,92 @@
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ 
+
+
+select{
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    border: 1px solid var(--primary);
+}
+input{
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 5px;
+
+    border: 1px solid var(--primary);
+}
+legend{
+    text-align: center;
+}
+@media(min-width:700px){
+    input{
+        width: 35%;
+    }
+
+}
+@media(min-width:700px){
+    select{
+        width: 10%;
+    }
+
+}
+
+
+input.cvv, input.año
+{
+    width: 20%;
+}
+
+@media(min-width:750px){
+    input.cvv, input.año{
+        width: 5%;
+    }
+}
+fieldset{
+    
+    border-radius: 15px;
+    color: hsl(253, 62%, 25%);
+    border-color: rgba(95, 21, 107, 0.123);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+
+.form-card{
+    text-align: center;
+    width: 60%;
+
+}
+
+.btn{
+   background-color: white;
+   border-radius: 10px;
+   color: var(--primary);
+   font-size: 20px;
+   font-family: 'Dosis', sans-serif;
+   font-weight: bold;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   border: 1px solid var(--primary);
+   padding: 5px 20px;
+   
+   transition: background-color;
+   transition-duration: .5s;
+   
+   
+}
+
+
+.btn:hover{
+   background-color: var(--primary);
+  color: white;
+}
+
