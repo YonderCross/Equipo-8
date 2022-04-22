@@ -1,0 +1,38 @@
+:root{
+    --primary: #009c88;
+    --secondary: #6acca8;
+    --third: #7ae659;
+    --fourth: #6ac1cc;
+    --primaryFont: 'Dosis', sans-serif;
+    --secondaryFont: 'Mukta', sans-serif;
+    --lightGray: #e1e1e1;
+    --black: #000;
+    --white: #fff;
+    --mainGradient: linear-gradient(to top, rgba(0,156,136,1) 0%, rgba(106,193,204,1) 41%, rgba(106,204,168,1) 73%, rgba(122,230,89,1) 100%);
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 2rem;
+    font-family: var(--primaryFont);
+    line-height: 1.5;
+   
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+[class*="container"]{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}

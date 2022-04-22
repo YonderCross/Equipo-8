@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/tailwind.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/loginStyles.css">
     <title>Login</title>
@@ -15,13 +16,14 @@
             <div class="login__text">
                 <img src="img/fulllogo.png" class="login__logo">
                 <h2 class="login__heading">login</h2>
-                <div class="login__form">
-                    <input type="email" class="login__field" placeholder="Email">
-                    <input type="password" class="login__field" placeholder="Contraseña">
-                    <input type="submit" value="Enviar" class="login__submit">
-                </div>
+                <form  id="enviar-mail" class="login__form">
+                    <input id="email" type="email" class="login__field" placeholder="Email">
+                    <input id="password" type="password" class="login__field" placeholder="Contraseña">
+                    <input id="enviar" type="submit" value="Enviar" class="login__submit">
+                </form>
             </div>
         </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
