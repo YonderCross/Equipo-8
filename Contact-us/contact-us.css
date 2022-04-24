@@ -8,16 +8,16 @@
     border-radius: 20px;
     border-color: black;
     border-style: dotted;
-    
+    font-size: large;
 
 }
-
+/*
 @media(min-width:300px){
     #about-us{
        font-size:xx-small;
     }
 }
-
+*/
 #lft {
     position: relative;
     top: 50px;
