@@ -1,0 +1,103 @@
+.about__us__section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+.about__us__title {
+    /*margin-left: 300px;*/
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow: 2px 2px 6px gray;
+}
+
+.about__us__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.donation__card {
+    width: 311px;
+    height: 630px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #009C88;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+@media only screen and ( max-width: 400px ){
+    .donation__img{
+        width: 75px;
+        height: 75px !important;
+    }
+}
+
+.donation__img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px !important;
+    margin-top: 20px;
+}
+
+.donation__button {
+    width: 100px;
+    height: 50px;
+    /*left: 70px;
+    top: 811px;*/
+    background-color: #D5B408;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-width: 0;
+    /*padding-left: -10px;
+    margin-top: 80px;
+    margin-bottom: 30px;*/
+}
+
+.donation__text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    margin-top: auto;
+    margin-top: 40px;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.about__us__info {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.about__us__text {
+    /*margin-left: 170px;*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.about__us__img {
+    size: 50px;
+    border-radius: 20px;
+    /*margin-left: 200px;
+    margin-top: 20px*/
+}
+
+
