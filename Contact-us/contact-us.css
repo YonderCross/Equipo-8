@@ -149,6 +149,12 @@
     #about-us{
        font-size: medium;
     }
+}
 
+@media only screen and (max-width:1200px){
+    #sent{
+        top:17px
+    }
+    
 }
 
