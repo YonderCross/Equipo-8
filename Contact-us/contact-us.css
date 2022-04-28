@@ -1,4 +1,5 @@
 /*Styles for the Welcome section*/
+
 #about-us {
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -8,26 +9,19 @@
     border-radius: 20px;
     border-color: black;
     border-style: dotted;
-    font-size: large;
+    font-size: xx-large;
+}
 
-}
-/*
-@media(min-width:300px){
-    #about-us{
-       font-size:xx-small;
-    }
-}
-*/
 #lft {
     position: relative;
     top: 50px;
-    min-width: 95px;
+    min-width: 100px;
 }
 
 #rgt {
     position: relative;
     top: 50px;
-    min-width: 95px;
+    min-width: 100px;
 }
 
 /* Styles for the "Form" section */
@@ -74,3 +68,69 @@
     width: 190px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+/* Media queries*/
+/*iphoneSE*/
+@media only screen and (min-width:375px) and (max-width:376px){
+    #about-us{
+       font-size: small;
+    }
+    #ctr{
+        position: relative;
+        left: 10px;
+        width: 173px;
+        height: 80px;
+    }
+    #rgt{
+        position: relative;
+        right: -10px;
+
+    }
+}
+/*Galaxy S8+*/
+@media only screen and (min-width:360px) and (max-width:360px){
+    #about-us{
+       font-size: small;
+    }
+    #ctr{
+        position: relative;
+        left: 10px;
+        width: 150px;
+        height: 80px;
+    }
+    #rgt{
+        position: relative;
+        right: -10px;
+
+    }
+}
+
+/*Galaxy Fold*/
+@media only screen and (min-width:280px) and (max-width:280px){
+    #about-us{
+       font-size: xx-small;
+    }
+    #lft{
+        top: 30px;
+    }
+    #ctr{
+        position: relative;
+        width: 84px;
+        height: 65px;
+    }
+    #rgt{
+        position: relative;
+        top: 30px;
+    }
+}
+
+
+/*390px-414px*/
+@media only screen and (min-width:390px) and (max-width:414px){
+    #about-us{
+       font-size: medium;
+    }
+
+}
+
