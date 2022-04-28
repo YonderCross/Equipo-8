@@ -1,0 +1,28 @@
+.us{
+    margin-top: 5rem;
+    background-image: url(../Base/img/dog-5.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+
+}
+@media(min-width: 768px){
+    .us{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.us__content{
+    background-color: #fff;
+    padding: 5rem;
+}
+@media(min-width: 768px){
+    .us__content{
+        grid-column: 1/2;
+    }
+}
+.us__heading{
+    margin-bottom: 1rem;
+}
