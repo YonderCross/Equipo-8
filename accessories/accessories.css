@@ -26,9 +26,7 @@
     transition: background-color;
     transition-duration: .5s;
 }
-.button {
-    text-align: center;
-}
+
 
 .buy__button:hover{
    background-color: var(--primary);
