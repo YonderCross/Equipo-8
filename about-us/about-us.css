@@ -13,54 +13,68 @@
 }
 
 .about__us__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width: 768px) {
+    .about__us__container {
+        grid-template-columns: 1fr 3fr;
+    }
 }
 
 .donation__card {
     width: 311px;
     height: 630px;
-    margin-top: -20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #009C88;
-    margin-bottom: 30px;
-    margin-right: 100px;
+    background: rgba(0, 156, 136, 0.66);
     border-radius: 10px;
+    margin: 0px auto 20px auto; 
+    padding: 5 5 5 5px;
 }
 
-@media only screen and ( max-width: 400px ){
-    .donation__img{
-        width: 75px;
-        height: 75px !important;
+@media(min-width: 768px) {
+    .donation__card {
+        margin-right: 20px;;
     }
 }
+
 
 .donation__img {
     border-radius: 50%;
     width: 250px;
     height: 250px !important;
     margin-top: 20px;
+    position: relative;
+    min-width: 95px;
 }
 
 .donation__button {
-    width: 100px;
-    height: 50px;
-    /*left: 70px;
-    top: 811px;*/
-    background-color: #D5B408;
-    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    color: var(--primary);
     font-size: 25px;
-    font-family: sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: bold;
     border-width: 0;
-    /*padding-left: -10px;
-    margin-top: 80px;
-    margin-bottom: 30px;*/
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary);
+    padding: 10px 50px;
+    padding-left: -10px;
+    transition: background-color;
+    transition-duration: .5s;
 }
+
+.donation__button:hover{
+    background-color: var(--primary);
+    color: white;
+ }
+
 
 .donation__text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -80,24 +94,32 @@
     flex-direction: column;
     font-family: sans-serif;
     text-align: center;
+    background-image: linear-gradient(to right, rgb(255 255 255 / 0.6), rgb(255 255 255 / 0.6)), url(../Base/img/about-us.jpg);
 }
 
-.about__us__text {
-    /*margin-left: 170px;*/
+@media(min-width: 768px) {
+    .about__us__info {
+        justify-content: center;
+    }
+}
+
+
+#about__us__text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin-top: 40px;
-}
-
-.about__us__img {
-    size: 50px;
-    border-radius: 20px;
-    /*margin-left: 200px;
-    margin-top: 20px*/
+    margin: 40px 40px 40px 40px;
+    font-weight: bolder;
+    color: black !important;
+    z-index: 1;
 }
 
 
+@media(min-width: 768px) {
+    .about__us__info {
+        width: 100%;
+    }
+}
