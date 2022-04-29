@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Base/css/normalize.css">
     <link rel="stylesheet" href="../Base/css/style.css">
-    <link rel="stulesheet" href="accessory.css">
+    <link rel="stylesheet" href="accessory.css">
+    <link rel="stylesheet" href="accessories.css">
     <title>Paw Garden</title>
 </head>
 <body>
@@ -29,9 +30,9 @@
             </div>
             <div class="header__bar">
                 <nav class="header__navigation">
-                    <a class="header__link" href="contacto.html"><span>Contacto</span><img src="../Base/img/Contactanos.png"></a>
-                    <a class="header__link" href="login.html"><span>Mi Usuario</span><img src="../Base/img/Usuario.png"></a>
-                    <a class="header__link" href="store.html"><span>Mi Carrito</span><img src="../Base/img/Carrito-compras.png"></a>
+                    <a class="header__link" href="contacto.html"><span>Contacto</span><img src="../Base/img/page-us.png"></a>
+                    <a class="header__link" href="login.html"><span>Mi Usuario</span><img src="../Base/img/user.png"></a>
+                    <a class="header__link" href="store.html"><span>Mi Carrito</span><img src="../Base/img/shopping-car.png"></a>
                 </nav> 
                 <img src="../Base/img/pawlino.png" alt="perrito" class="header__perrito">
             </div> 
@@ -45,39 +46,51 @@
         </nav>
     </header>
     <section>
-        <h1 class="nosotros__header">Impermiable reflejante</h1>
+      
     <!--Seccion de articulo individual-->
-            <div class="accessories__grid">         
-                <div class="accessory__image">
-                    <img src="../Base/img/imgAccessories/impermiableReflejante.webp" alt="im" class="producto__imagen">
-                </div>
-                <div class="accessor__container">
-                    <h1 class="accessory_title>"> Havenfly Impermeable para Perros con Capucha con Rayas Reflectantes，Ajustable，Resistente al Agua, Peso Ligero (Small, Amarillo) </h1>
-                     <p class="accessory__description">
-                             <strong>Tipo: </strong>Ropa 
-                             <br />
-                             <strong>Características:</strong> <br />
-                             <strong>Tamaño: </strong>S(0.5 kg) - 5XL(50 kg) <br />
-                             <strong>Diseño: </strong>con velcro <br/>
-                             Material resistente<br />
-                             Ropa transpirable <br/>
+    <div class="container__description"> 
+        <h2 class="accessory__title"> Impermeable para Perros con Capucha con Rayas Reflectantes</h2><br/>    
+        <div class="description__grid">        
+            <div class="accessory__img">        
+                    <img src="../Base/img/imgAccessories/raincoat.webp" alt="img" class="accesory__pictures">
+            </div>
+            <div class="accessory__text">
+                
+                        <p class="description">
+                             <strong>Tipo: </strong>Ropa <br />
+                             <strong>Descripción:</strong> <br />
                              <strong>Color:</strong> Amarillo <br/>
-                     </p>
-                     <strong>Acerca de este artículo</strong><br/>
-                        💕Los impermeables están hechos de material de PU ecológico, suave y fuerte, inodoro y, lo más importante, impermeable, manteniendo a los perros calientes y secos en todo momento.🐶<br/>
-                        💕El impermeable tiene orificios de tracción en la parte posterior para que sea más seguro remolcar a su perro en días lluviosos. También hay un pequeño bolsillo en la parte posterior que se puede usar para bolsas de bocadillos para perros y bolsas de basura.🐶<br/>
-                        💕Las correas para el vientre del impermeable son fáciles de usar y ajustables para facilitar su uso. Puede ajustar la estanqueidad de su impermeable para evitar que su perro se sienta atado.🐶<br/>
-                        💕Hay tiras reflectantes en ambas mangas del impermeable para perros y alrededor de la parte posterior del impermeable, y tiras reflectantes de alta resistencia le permiten encontrar rápidamente a su perro en días lluviosos oscuros y húmedos.🐶<br/>
-                        💕Hay una correa elástica debajo del impermeable, que se adhiere a la pata del perro, lo que permite que el impermeable se use más de cerca en el perro y le da al perro una protección más cuidadosa.🐶<br/>
-                        💕El sombrero viene con una cuerda de tracción, y puede ajustar la estanqueidad del sombrero al tamaño de la cabeza de su perro para que no bloquee la vista del perro.🐶</p><br/>
-                     
-                     <p class="accessory__price">$296</p>
-                 <div class="button"><button class="buy__button">Añadir a mi cesta</button>
+                             <strong>Material:</strong> Velcro <br/>
+                             <strong>Marca:</strong> Havenfly <br/>
+                             <strong>Tamaño: </strong>S(0.5 kg) - 5XL(50 kg) <br />
+                             <strong>Color:</strong> Amarillo <br/><br>
+                                <strong>Acerca de este artículo:</strong><br/>
+                                    Los impermeables están hechos de material de PU ecológico, suave y fuerte, inodoro y, lo más importante, impermeable, manteniendo a los perros calientes y secos en todo momento.🐶<br/>
+                                    El impermeable tiene orificios de tracción en la parte posterior para que sea más seguro remolcar a su perro en días lluviosos. También hay un pequeño bolsillo en la parte posterior que se puede usar para bolsas de bocadillos para perros y bolsas de basura.🐶<br/>
+                                    Las correas para el vientre del impermeable son fáciles de usar y ajustables para facilitar su uso. Puede ajustar la estanqueidad de su impermeable para evitar que su perro se sienta atado.🐶<br/>
+                                    
+                                    
+                        </p> 
                  </div>
             </div>
-
-
+            <p class="accessory__price">$449</p> 
+            <form class="accessory__form">
+                <label for="selection" class="accessory__label">Cantidad</label>
+                <select class="buy__button">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <input type="submit" class="buy__button" value="Añadir a mi carrito">
+            </form>
+        </div>
                 <h2 class="carousel__foot">Compra online todos los productos y comida para mascotas al mejor precio.</h2>
+    </div>   
     </section>
     <footer class="footer">
         <div class="footer__grid container">
