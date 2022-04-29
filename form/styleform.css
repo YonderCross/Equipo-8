@@ -1,17 +1,28 @@
-.container{
-    width: 60%;
+.container.form{
+    width: 95%;
     margin-bottom: 50px;
 
 }
+@media(min-width:700px){
+    .container.form{
+        width: 50%;
+    }
+}
 
 .form-control{
-    width: 80%;
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid var(--primary);
+    
 
 }
-
+@media(min-width:700px){
+    .form-control{
+        width: 85%;
+        margin-left: 30px;
+    }
+}
 
 select{
     width: 40%;
