@@ -1,0 +1,36 @@
+.promotion__container{
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: white;
+}
+
+.Promotion__text1{
+    font-size: 25px; /*Especifica la dimensión de la letra.*/
+    font-family:var(--primaryFont);
+    color: rgb(10,10,10);
+    background-position: center;
+    overflow: hidden;
+}
+
+.Promotion__img1{
+    height: auto;
+    margin-top: 20px;
+    background-position: center;
+    min-width: 95px;
+}
+.Promotion__img2{
+    height: auto;
+    margin-top: 20px;
+    background-position: center;
+    min-width: 95px;
+}
+.promotion__text2{
+    font-size: 25px; /*Especifica la dimensión de la letra.*/
+    font-family:var(--primaryFont);
+    color: rgb(10, 10, 10);
+    background-position: center;
+    overflow: hidden;
+}
