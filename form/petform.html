@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Agrego logo a pestaña-->
+    <link
+      rel="shortcut icon"
+      href="../Base/img/Logo-huella.png"
+      type="image/x-icon"
+    />
+    <!--Agrego logo a pestaña-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700;800&display=swap" rel="stylesheet">
@@ -16,7 +23,6 @@
     <title>Select</title>
 </head>
 <body>
-    <fieldset>
     <header class="header">
         <div class="header__grid container">
             <div class="header__logo">
@@ -36,53 +42,58 @@
             <a href="services.html" class="navigation__link">Servicios</a>
             <a href="store.html" class="navigation__link">Accesorios</a>
             <a href="promos.html" class="navigation__link">Promociones</a>
-            <a href="community.html" class="navigation__link">Comunidad</a>
+            <a href="../Community/community.html" class="navigation__link">Comunidad</a>
         </nav>
     </header>
     <section>
-
-        <!------------------------------FORM ----------------------------------------------------------------------------------------------------->
+        <div class="container form">
+            <div class="row">
+                <form id="form">
+                    <h1 style="text-align: center;"> Catálogo de perrhijos</h1>
+                    <fieldset>
+                   
+                        <legend> Nombre del perrhijo</legend>
+                        <input type="text" name="nombrep" class="form-control" id="nombrep"/>
+                        
+                        <br/>
+                        <legend>Edad</legend>
+                        <input type="number" name="edad" class="form-control" id="edad"/>
+                        <br/>
+                        <legend>Raza</legend>
+                        <input type="text" name="raza" class="form-control"   id="raza"/>
+                        <br>
+                        
+                        <select name="Sexo" id="sexo" >
+                            <option value="disabled selected">Seleccione sexo</option>
+                            <option id="macho">Macho</option>
+                            <option id="hembra" value="">Hembra</option>
+                        </select>
+                        <br/>
+                        
+                            <button type="button" id="añadir" class="btn">AñadirMascota</button>
+                            <button type="button" id="modificar" class="btn">Editar</button>
+                            <button type="button" id="eliminar" class="btn">Eliminar</button>
+                            
+                            <p class="warnings" id="warnings"></p>
+                      
+                       </fieldset>
+                      
+                        
+                      
+    
+                   
+                   
+                       
         
-        <h1 style="text-align: center;"> Datos de Contacto</h1>
-<div class="container form">
-    <div class="row">
-        <form id="form">
-            <fieldset>
-                
-                <legend> Nombre(s) </legend>
-                <input type="text" name="nombre" class="form-control" id="nombre" required/>
-                
-                
-                <legend> Apellidos </legend>
-                <input type="text" name="apellidos" class="form-control" id="apellidos" required/>
-                
-                <legend>correo</legend>
-                <input type="text" name="correo" class="form-control" id="correo" required/>
-                <legend>Teléfono</legend>
-                <input type="number" name="telefono" class="form-control" id="telefono"/>
-                <br/>
-                <legend>Dirección</legend>
-                <input type="text" name="direccion" class="form-control"   id="direccion"/>
-                <legend>contraseña</legend>
-                <input type="password" name="contraseña" class="pass" id="contraseña" required/>
-                
-                <legend>confirmar contraseña</legend>
-                <input type="password" name="ccontraseña" class="pass" id="ccontraseña" required/>
-                
-                
-                <br/>
-              
-                <button type="submit" id="submit" class="btn">Registrarse</button>
-                <p class="warnings" id="warnings"></p>
-            
-            </fieldset>
-
-        </form>
-    </div>
-</div>
+                </form>
+            </div>
+        </div>
+        
+        
+        
 
 
-</section>
+
 
 
 
@@ -104,16 +115,14 @@
                 <p class="footer__texto">Calle Londres 212, Benito Juárez, Ciudad de México</p>
                 <p class="footer__texto"> 563 C. San Miguel, Guadalajara, Jalisco</p>
                 <div class="footer__media">
-                    <a href="https://www.facebook.com"><img src="/login/img/facebook-icon.svg" alt="facebook-logo"></a>
-                    <a href="https://www.twitter.com"><img src="/login/img/twitter-icon.svg" alt="twitter-logo"></a>
-                    <a href="https://wwww.instagram.com"><img src="/login/img/instagram-icon.svg" alt="instagram-icon"></a>
-                    <a href="https://www.youtube.com"><img src="/login/img/youtube-icon.svg" alt="youtube-logo"></a>
+                    <a href="https://www.facebook.com"><img src="/Base/img/facebook-icon.svg" alt="facebook-logo"></a>
+                    <a href="https://www.twitter.com"><img src="/Base/img/twitter-icon.svg" alt="twitter-logo"></a>
+                    <a href="https://wwww.instagram.com"><img src="/Base/img/instagram-icon.svg" alt="instagram-icon"></a>
+                    <a href="https://www.youtube.com"><img src="/Base/img/youtube-icon.svg" alt="youtube-logo"></a>
                 </div>
             </div>
         </div>
        
     </footer>
-
-    <script src="formcontact.js"></script>
 </body>
 </html>

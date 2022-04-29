@@ -5,7 +5,7 @@
 }
 @media(min-width:700px){
     .container.form{
-        width: 50%;
+        width: 35%;
     }
 }
 
@@ -19,11 +19,27 @@
 }
 @media(min-width:700px){
     .form-control{
-        width: 85%;
+        width: 75%;
         margin-left: 30px;
     }
 }
 
+.pass{
+    width: 60%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+@media(min-width:700px){
+    .pass{
+        width: 30%;
+        margin-bottom: 10px;
+        margin-left: 35px;
+        border-radius: 5px;
+        border: 1px solid var(--primary);
+    }
+}
 select{
     width: 40%;
     margin-top: 20px;
@@ -33,6 +49,16 @@ select{
 
 
 }
+
+.warnings{
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    color: var(--primary);
+    padding-top:15px ;
+}
+
+
 fieldset{
 
     border-radius: 15px;
@@ -49,8 +75,8 @@ fieldset{
     margin-top: 30px;
     margin-bottom: 30px;
     border: 1px solid var(--primary);
-    padding: 5px 20px;
-    
+    padding: 5px 10px;
+    margin-left: 35px;
     transition: background-color;
     transition-duration: .5s;
     
