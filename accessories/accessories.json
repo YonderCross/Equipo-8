@@ -1,7 +1,7 @@
 {
     "accessories": {
         "1": {
-            "name": "Impermiable",
+            "name": "Impermiable reflejante",
             "tipe": "Ropa",
             "Description": "Havenfly Impermeable para Perros con Capucha con Rayas Reflectantes，Ajustable，Resistente al Agua, Peso Ligero (Small, Amarillo)",
             "Color": "Amarillo",
@@ -11,7 +11,7 @@
         },
     
         "2": {
-            "name": "Botella de agua",
+            "name": "Botella de agua con filtro",
             "tipe": "Accesorios para alimentos",
             "Description": "Botella De Agua Portátil Con Seguro Y Filtro Para Perro",
             "Color": "Amarillo/ Azul/ Verde",
@@ -23,10 +23,10 @@
         "3": {
             "name": "Bolsa de basura portatil",
             "tipe": "Higiene",
-            "Description": "",
+            "Description": "Portátil",
             "Color": "Rosa/ Verde/ Blanca/ Negro/ Rojo/ Azul",
-            "Material": "PP PE",
-            "Mark": "Genérica",
+            "Material": "Materiales reciclados",
+            "Mark": "Luna",
             "Price": "299"
         },
 
