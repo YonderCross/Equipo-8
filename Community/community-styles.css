@@ -22,9 +22,12 @@
 @media(min-width: 768px){
     .us__content{
         grid-column: 1/2;
-        grid-row: 1/2git ;
+        grid-row: 1/2;
     }
 }
 .us__heading{
     margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 4.9rem;
+    line-height: 1.2;
 }
