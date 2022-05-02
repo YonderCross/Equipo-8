@@ -25,13 +25,21 @@
 }
 
 /* Styles for the "Form" section */
-#form {
+#frm {
     text-align: center;
     height: fit-content;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 70px;
     margin-bottom: 70px;
+    
 }
+/**.form-control{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    
+
+}**/
 
 #sent {
 
@@ -42,20 +50,17 @@
 }
 
 #data {
-    font-family: dosis;
     text-align: center;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    
 }
 
 #data1 {
     text-align: left;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+
 }
 
 #data2 {

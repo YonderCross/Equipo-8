@@ -64,27 +64,31 @@
                 </div>
             </div>
         </div>
-        <!--in this part we set the layouts for the "form" section-->
-        <div class="container" id="form">
+        <!--En esta sección se modifica el formulario-->
+        <div class="container form" id="frm">
             <div class="row justify-content-center">
+                
                 <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6  form-group"><!--Se determina la responsividad de las columnas a diferentes tamaños-->
-                    <input type="email" class="form-control-lg border-0" id="data" placeholder="Nombre" size="40">
+                    <legend> Nombre(s) </legend>
+                    <input type="text" class="form-control-lg " id="data" placeholder="" size="40">
                 </div>
                 <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6  form-group"><!--Usando clases de bootstap -->
-                    <input type="tel" class="form-control-lg border-0" id="data" placeholder="Tel." maxlength="10"
+                    <legend>Teléfono</legend>
+                    <input type="tel" class="form-control-lg " id="data" placeholder="" maxlength="10"
                         minlength="10" size="40">
                 </div>
                 <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6 form-group">
-                    <input type="email" class="form-control-lg border-0" id="data" placeholder="e-mail" maxlength="30"
+                    <legend>Correo</legend>
+                    <input type="email" class="form-control-lg " id="data" placeholder="" maxlength="30"
                         size="40">
                 </div>
             </div>
 
 
             <!--En esta seccion definimos el formulario-->
-            <div class="row">
+            <div class="row ">
                 <div class="col-12 form-group" style="padding:10px;">
-                    <textarea class="form-control border-0" id="data1" rows="6"
+                    <textarea class="form-control" id="data1" rows="6"
                         placeholder="Introduce tu mensaje"></textarea>
                 </div>
             </div>
