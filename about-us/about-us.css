@@ -6,7 +6,6 @@
 }
 
 .about__us__title {
-    /*margin-left: 300px;*/
     font-weight: bolder;
     font-size: 50px;
     text-shadow: 2px 2px 6px gray;
@@ -23,6 +22,19 @@
     }
 }
 
+
+.about__us__header {
+    text-align:10px 0px 0px 300px;
+    font-style: oblique;
+}
+
+@media(min-width: 768px) {
+    .about__us__header {
+        justify-content: center;
+    }
+}
+
+
 .donation__card {
     width: 311px;
     height: 630px;
@@ -38,7 +50,7 @@
 
 @media(min-width: 768px) {
     .donation__card {
-        margin-right: 20px;;
+        margin-right: 20px;
     }
 }
 
@@ -81,12 +93,11 @@
     font-size: 17px;
     margin-top: auto;
     margin-top: 40px;
-    /*margin-left: 10px;
-    margin-right: 10px;*/
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
 }
+
 
 
 .about__us__info {
@@ -95,11 +106,16 @@
     font-family: sans-serif;
     text-align: center;
     background-image: linear-gradient(to right, rgb(255 255 255 / 0.6), rgb(255 255 255 / 0.6)), url(../Base/img/about-us.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
+
 
 @media(min-width: 768px) {
     .about__us__info {
         justify-content: center;
+        width: 100%;
     }
 }
 
@@ -107,19 +123,77 @@
 #about__us__text {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
+    font-style: oblique;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     margin: 40px 40px 40px 40px;
     font-weight: bolder;
-    color: black !important;
+    color: black;
     z-index: 1;
 }
 
+/* Aquí comienzan las @medias del texto de about us*/
+/* Para Nest Hub Max*/
+/* Para Galaxy fold*/
+@media only screen and (min-width:280px) and (max-width:653px){
+    #about__us__text {
+       font-size: 10px;
+    }
+}
 
-@media(min-width: 768px) {
-    .about__us__info {
-        width: 100%;
+
+/* Para Samsung Galaxy S8+*/
+@media only screen and (min-width:354px) and (max-width:740px){
+    #about__us__text {
+       font-size: 15px;
+    }
+}
+
+/* Para Samsung Galaxy a51/71*/
+@media only screen and (min-width:412px) and (max-width:914px){
+    #about__us__text {
+       font-size: 10px;
+       padding: 15px;
+    }
+}
+
+
+@media only screen and (min-width:450px) and (max-width:560px){
+    #about__us__text {
+       font-size: 16px;
+       padding: 25px;
+    }
+}
+
+
+@media only screen and (min-width:541px) and (max-width:767px){
+    #about__us__text {
+       font-size: 24px;
+       padding: 50px;
+    }
+}
+
+
+/* De 654 px a 800px */
+@media only screen and (min-width:654px) and (max-width:720px){
+    #about__us__text {
+       font-size: 25px;
+    }
+}
+
+
+/* ¡Pad */
+@media only screen and (min-width:768px) and (max-width:1024px){
+    #about__us__text {
+       font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width:800px) and (max-width:1200px){
+    #about__us__text {
+       font-size: 22px;
     }
 }
