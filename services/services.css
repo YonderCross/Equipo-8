@@ -1,8 +1,10 @@
+/*Estilos para el container principal */
 #total{
     margin-top: 20px;
     margin-bottom: 20px;
  
 }
+/* Estilos generales container de la lista de servicios*/
 #serv{
     min-width: 280px;
     min-height: 360px;
@@ -14,15 +16,16 @@
     border-top: 6px solid grey;
     border-right: 6px solid grey;    
 }
-
+/*Estilos para la imagen*/
 #image{   
-    min-width: 10%;
+
+    min-width: 280px;
     border-color: black;
     border-bottom: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+/*Estilos para el primer menu*/
 #menu{
     width: 45%;
     font-family: 'Dosis', sans-serif;
@@ -38,9 +41,10 @@
     transition-duration: .5s;
     transition: background-color;
 }
-#menu:hover{
-color: antiquewhite; }
+/*Estilos al pasar el cursor sobre las letras del servicio*/
+#menu:hover{color: antiquewhite; }
 
+/*Estilos de los iconos*/
 #icon{
     margin-left: 15px;
     margin-top: 10px;
@@ -51,16 +55,16 @@ color: antiquewhite; }
     border-bottom: beige solid;
 
 }
-ul, ol {
+ul, ol, li {
     list-style:none;
 }
 
-.nav > li {
+.nav > li {   
     float:left;
 }
 
 .nav li {
-    background-color:#009C88;
+    background: color #009C88;;
     border-color: bisque;
     color:#fff;
     text-decoration:none;
@@ -70,7 +74,7 @@ ul, ol {
 
 .nav li a:hover {
     color: white;
-    background-color:#099683;
+    
 
 }
 
@@ -81,22 +85,22 @@ ul, ol {
 }
 
 .nav li:hover > ul {
+    background-color: #009C88;
     display:inline;
-    border-style: solid;
+    border-style: none;
 }
 @media only screen and (max-width: 500px){
     .nav li:hover > ul {
         display:block;
-        border-style: solid;
+        border-style: none;
     }
 } 
-
-a{
-    color: white;
-    text-decoration: none;
+#prim{
+    background-color: #077869;
+    border-radius: 10px;
 }
-
-#re{
-    border-style: dashed;
-}
+#sec:hover{
+    background-color: #11564d;
+    border-radius: 10px;
+    color: antiquewhite; }
 
