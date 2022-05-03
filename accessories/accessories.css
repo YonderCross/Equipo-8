@@ -8,7 +8,10 @@
     margin-top: 10px;
     line-height:normal;
 }
-
+.store{
+    max-width: 120rem;
+    margin: 0 auto 5rem auto;
+}
 .buy__button {
     text-align: center;
     background-color: white;
@@ -110,3 +113,5 @@
 .zoom:hover{
     transform: scale(1.5);
 }
+
+/*  CARRITO */

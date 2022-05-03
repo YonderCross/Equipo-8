@@ -123,6 +123,9 @@ h1{
         margin-bottom: -4.2rem;
     }
 }
+.shopping-car:hover{
+    
+}
 .navigation{
     display: flex;
     flex-direction: column;

@@ -33,7 +33,7 @@ const exists = carAccessories.some( accessory=>{
     return accessory.id === infoCurso.id
 });
 if(exists){
-    const cur
+    
 }
 carAccessories = [...carAccessories];
 }

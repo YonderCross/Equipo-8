@@ -32,7 +32,25 @@
                 <nav class="header__navigation">
                     <a class="header__link" href="contacto.html"><span>Contacto</span><img src="../Base/img/page-us.png"></a>
                     <a class="header__link" href="login.html"><span>Mi Usuario</span><img src="../Base/img/user.png"></a>
-                    <a class="header__link" href="store.html"><span>Mi Carrito</span><img src="../Base/img/shopping-car.png"></a>
+                    <a class="header__link shopping-car" href="#">
+                      <span>Mi Carrito</span>
+                      <img src="../Base/img/shopping-car.png">
+                      <div class="carrito">
+                        <table class="carrito__tabla">
+                            <thead>
+                                <tr>
+                                  <th>Imagen</th>
+                                  <th>Nombre</th>
+                                  <th>Precio</th>
+                                  <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                      </div>
+                    </a>
+
                 </nav> 
                 <img src="../Base/img/pawlino.png" alt="perrito" class="header__perrito">
             </div> 
@@ -45,7 +63,7 @@
             <a href="community.html" class="navigation__link">Comunidad</a>
         </nav>
     </header>
-    <section>
+  <section>
 
     <!--Aqui comienza la seccion de carrucel en accesorios-->
     <div class="accessories__section">
@@ -113,273 +131,339 @@
         </div>
       </div>
       <!--Termina carrucel-->
-      
-    <!--Comienzan accesorios-->
-    <h2 class="carousel__foot">Compra online todos los productos y comida para mascotas al mejor precio.</h2>
-      <div class="accessories__container">
-        <h2 class="accessories__heading">Accesorios</h2>
-        <!--se crea caja de titulo, imagen, precio, descripcion y enlace de compra-->
-        <div class="accessories__grid">
+    <div class="store">
+      <!--Comienzan accesorios-->
+      <h2 class="carousel__foot">Compra online todos los productos y comida para mascotas al mejor precio.</h2>
+        <div class="accessories__container">
+          <h2 class="accessories__heading">Accesorios</h2>
+          <!--se crea caja de titulo, imagen, precio, descripcion y enlace de compra-->
+          <div class="accessories__grid">
+                  <div class="accessory">
+                    <h3 class="accessory__name">Impermiable reflejante</h3>
+                    <a href="../accessories/individualAccessories/raincoat.html"><img src="../Base/img/imgAccessories/raincoat.webp" alt="accessory-paw" class="accesory__picture"/></a>             
+                      <p class="accessory__description">
+                        <strong>Tipo: </strong>Ropa 
+                        <br />
+                        <strong>Características:</strong> <br />
+                        Tamaño: S(0.5 kg) - 5XL(50 kg) <br />
+                        Material resistente<br />
+                        Diseño: con velcro <br/>
+                        Ropa transpirable <br/>
+                        <strong>Color:</strong>
+                        <select class="accesory__color">
+                          <option class="amarillo">Amarillo</option>
+                        </select>
+                      </p>
+                      <p class="accessory__price">$<span>449</span></p>
+                      <div class="button">
+                        <button class="buy__button">Añadir a mi cesta</button>
+                      </div>
+                  </div> <!--Termina accessory 1-->      
+                  <div class="accessory">
+                    <h3 class="accessory__name">Botella de agua con filtro</h3>
+                    <a href="../accessories/individualAccessories/waterBottle.html"><img src="../Base/img/imgAccessories/waterBottle.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+                      <p class="accessory__description">
+                        <strong>Tipo: </strong>Botella de agua
+                        <br />
+                        <strong>Características:</strong> <br />
+                        Tamaño: 19 cm <br />
+                        Portatil y con filtro <br />
+                        Diseño: liso <br/>
+                        Material: Acero inoxidable <br/>
+                        <strong>Color:</strong>
+                        <select class="accesory__color">
+                          <option value="azul">Azul</option>
+                          <option value="amarillo">Amarillo</option>
+                          <option value="verde">Verder</option>
+                        </select>
+                        <strong>Tamaño</strong>
+                        <select class="accesory__tamano">
+                          <option value="grande">Grande</option>
+                          <option value="mediano">Mediano</option>
+                        </select>
+                      </p>
+                      <p class="accessory__price">$<span>340</span></p>
+                      <div class="button"><button class="buy__button">Añadir a mi cesta</button>
+                      </div>
+                  </div> <!--Termina accessory 2-->
+                  <div class="accessory">
+                    <h3 class="accessory__name">Bolsa de basura portatil</h3>
+                    <a href="../accessories/individualAccessories/wasteBag.html"><img src="../Base/img/imgAccessories/wasteBag.webp" alt="accessory-paw" class="accesory__picture"/></a>             
+                      <p class="accessory__description">
+                        <strong>Tipo: </strong>Porta bolsa y bolsas desechables
+                        <br />
+                        <strong>Características:</strong> <br />
+                        Tamaño: 8 cm de largo, 3.5 cm de ancho <br />
+                        Adecuado para todo tamaño  de perros<br />
+                        Diseño: Liso <br/>
+                        Material: PP PE <br/>
+                        <strong>Color:</strong>
+                        <select class="accesory__color">
+                          <option value="azul">Azul</option>
+                          <option value="amarillo">Amarillo</option>
+                          <option value="verde">Verder</option>
+                          <option value="rojo">Rojo</option>
+                          <option value="naranja">Blanco</option>
+                        </select>
+                      </p>
+                      <p class="accessory__price">$<span>299</span> </p>
+                      <div class="button"><button class="buy__button">Añadir a mi cesta</button>
+                      </div>
+                  </div> <!--Termina accessory 3-->
+                  <div class="accessory">
+                    <h3 class="accessory__name">Cama Iglu</h3>
+                    <a href="#"><img src="../Base/img/imgAccessories/bed.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+                      <p class="accessory__description">
+                        <strong>Tipo: </strong>Cama para perro
+                        <br />
+                        <strong>Características:</strong> <br />
+                        Tamaño: 60 cm <br />
+                        Comodidad en su máxima expresión.
+                        Material suave. 
+                        Facil lavado. <br />
+                        <strong>Color:</strong>
+                        <select class="accesory__color">
+                          <option value="gris">Gris</option>
+                          <option value="azul">Azul</option>
+                          <option value="rosa">Rosa</option>
+                          <option value="unicornio">Unicornio</option>
+                        </select>
+                      </p>
+                      <p class="accessory__price">$<span>350</span></p>
+                      <div class="button"><button class="buy__button">Añadir a mi cesta</button>
+                      </div>
+                </div> <!--Termina accessory 4-->
                 <div class="accessory">
-                  <h3 class="accessory__name">Impermiable reflejante</h3>
-                  <a href="../accessories/individualAccessories/raincoat.html"><img src="../Base/img/imgAccessories/raincoat.webp" alt="accessory-paw" class="accesory__picture"/></a>             
+                  <h3 class="accessory__name">Collar Led</h3>
+                  <a href="#"><img src="../Base/img/imgAccessories/Led.webp" alt="accessory-paw" class="accesory__picture"/></a>
                     <p class="accessory__description">
-                      <strong>Tipo: </strong>Ropa 
+                      <strong>Tipo: </strong>Collar Led
                       <br />
                       <strong>Características:</strong> <br />
-                      Tamaño: S(0.5 kg) - 5XL(50 kg) <br />
-                      Material resistente<br />
-                      Diseño: con velcro <br/>
-                      Ropa transpirable <br/>
-                      <strong>Color:</strong> Amarillo <br/>
+                      Tamaño: Ajustable<br />
+                      Talla chica, mediana y grande<br />
+                      Diseño: Led <br/>
+                      Material: Textil <br/>
+                      <strong>Color:</strong>
+                      <select class="accesory__color">
+                        <option value="azul">Azul</option>
+                        <option value="amarillo">Amarillo</option>
+                        <option value="verde">Verder</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="naranja">Naranja</option>
+                      </select>
                     </p>
-                    <p class="accessory__price">$449</p>
+                    <p class="accessory__price">$<span>200</span></p>
                     <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                     </div>
-                </div> <!--Termina accessory 1-->      
+                </div> <!--Termina accessory 5-->
                 <div class="accessory">
-                  <h3 class="accessory__name">Botella de agua con filtro</h3>
-                  <a href="../accessories/individualAccessories/waterBottle.html"><img src="../Base/img/imgAccessories/waterBottle.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+                  <h3 class="accessory__name">Limpia patitas</h3>
+                  <a href="#"><img src="../Base/img/imgAccessories/cleanPaw.webp" alt="accessory-paw" class="accesory__picture"/></a>             
                     <p class="accessory__description">
-                      <strong>Tipo: </strong>Botella de agua
+                      <strong>Tipo: </strong>Limpieza e higiene
                       <br />
                       <strong>Características:</strong> <br />
-                      Tamaño: 19 cm <br />
-                      Portatil y con filtro <br />
-                      Diseño: liso <br/>
-                      Material: Acero inoxidable <br/>
-                      <strong>Color:</strong> Amarillo/ Azul/ Verde <br/>
+                      Tamaño: Chico y grande <br />
+                      Listo para usarse<br />
+                      Diseño: Liso <br/>
+                      Material: Silicona suave <br/>
+                      <strong>Color:</strong>
+                      <select class="accesory__color">
+                        <option value="azul">Azul</option>
+                        <option value="rosa">Rosa</option>
+                      </select>
                     </p>
-                    <p class="accessory__price">$340</p>
+                    <p class="accessory__price">$<span>190</span></p>
                     <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                     </div>
-                </div> <!--Termina accessory 2-->
+                </div> <!--Termina accessory 6-->
                 <div class="accessory">
-                  <h3 class="accessory__name">Bolsa de basura portatil</h3>
-                  <a href="../accessories/individualAccessories/wasteBag.html"><img src="../Base/img/imgAccessories/wasteBag.webp" alt="accessory-paw" class="accesory__picture"/></a>             
+                  <h3 class="accessory__name">Alfombra para lamer con ventosas</h3>
+                  <a href="#"><img src="../Base/img/imgAccessories/carpetlick.jpg" alt="accessory-paw" class="accesory__picture"/></a>
                     <p class="accessory__description">
-                      <strong>Tipo: </strong>Porta bolsa y bolsas desechables
+                      <strong>Tipo: </strong>Artículos para Comida y Agua
+                      <br />
+                      <strong>Marca: </strong>Ulmpp
+                      <br />
+                      <strong>Características:</strong> <br />
+                      Tamaño: 21 cm <br />
+                      Silicona de grado alimenticio<br/>
+                      Libre de BPA<br/>
+                      Para aliviar la diversión, la ansiedad y el aburrimiento.
+                      <strong>Color:</strong>
+                      <select class="accesory__color">
+                        <option value="azul">Azul</option>
+                        <option value="verde">Verde</option>>
+                      </select>
+                    </p>
+                    <p class="accessory__price">$<span>400</span></p>
+                    <div class="button"><button class="buy__button">Añadir a mi cesta</button>
+                    </div>
+                </div> <!--Termina accessory 7-->
+                <div class="accessory">
+                  <h3 class="accessory__name">Entrenador para ir al baño</h3>
+                  <a href="#"><img src="../Base/img/imgAccessories/trainerForBathroom.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+                    <p class="accessory__description">
+                      <strong>Tipo: </strong>Orinal de Entrenamiento
+                      <br />
+                      <strong>Características:</strong> <br />
+                      Tamaño: 47 cm, 33 cm<br />
+                      Perfecto para patios y uso interior <br />
+                      Sistema de tres capas <br/>
+                      Material: Plástico sintético <br/>
+                      <strong>Color:</strong> Verde <br/>
+                    </p>
+                    <p class="accessory__price">$<span>370</span></p>
+                    <div class="button"><button class="buy__button">Añadir a mi cesta</button>
+                    </div>
+                </div> <!--Termina accessory 8-->
+                <div class="accessory">
+                  <h3 class="accessory__name">Zapatos de malla para perros</h3>
+                  <a href="#"><img src="../Base/img/imgAccessories/Shoes.webp" alt="accessory-paw" class="accesory__picture"/></a>             
+                    <p class="accessory__description">
+                      <strong>Tipo: </strong>Zapatos
                       <br />
                       <strong>Características:</strong> <br />
                       Tamaño: 8 cm de largo, 3.5 cm de ancho <br />
                       Adecuado para todo tamaño  de perros<br />
                       Diseño: Liso <br/>
                       Material: PP PE <br/>
-                      <strong>Color:</strong> Rosa/ Verde/ Blanca/ Negro/ Rojo/ Azul <br/>
+                      <strong>Color:</strong> Rosa/Verde/Blanca/Negro/rojo/Azul <br/>
+                      <select class="accesory__color">
+                        <option value="azul">Azul</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="verde">Verde</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="rosa">Rosa</option>
+                      </select>
                     </p>
-                    <p class="accessory__price">$299</p>
+                    <p class="accessory__price">$<span>450</span></p>
                     <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                     </div>
-                </div> <!--Termina accessory 3-->
+                </div> <!--Termina accessory 9-->
                 <div class="accessory">
-                  <h3 class="accessory__name">Cama Iglu</h3>
-                  <a href="#"><img src="../Base/img/imgAccessories/bed.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+                  <h3 class="accessory__name">Cepillo de dientes + dentrifico</h3>
+                  <a href="#"><img src="../Base/img/imgAccessories/toothpaste.jpg" alt="accessory-paw" class="accesory__picture"/></a>
                     <p class="accessory__description">
-                      <strong>Tipo: </strong>Cama para perro
+                      <strong>Tipo: </strong>Cuidado e higiene
                       <br />
                       <strong>Características:</strong> <br />
-                      Tamaño: 60 cm <br />
-                      Comodidad en su máxima expresión.
-                      Material suave. 
+                      Tamaño: 10 x 3 x 10 centímetros <br />
+                      Diseño de cerdas de 360 ​​grados
+                      Resistencia a las mordeduras
                       Facil lavado. <br />
-                      <strong>Color:</strong> Gris/ Azul/ Rosa/ Unicornio <br/>
+                      <strong>Color:</strong> Verde <br/>
                     </p>
-                    <p class="accessory__price">$350</p>
+                    <p class="accessory__price">$<span>250</span></p>
                     <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                     </div>
-              </div> <!--Termina accessory 4-->
+              </div> <!--Termina accessory 10-->
               <div class="accessory">
-                <h3 class="accessory__name">Collar Led</h3>
-                <a href="#"><img src="../Base/img/imgAccessories/Led.webp" alt="accessory-paw" class="accesory__picture"/></a>
-                  <p class="accessory__description">
-                    <strong>Tipo: </strong>Collar Led
-                    <br />
-                    <strong>Características:</strong> <br />
-                    Tamaño: Ajustable<br />
-                    Talla chica, mediana y grande<br />
-                    Diseño: Led <br/>
-                    Material: Textil <br/>
-                    <strong>Color:</strong> Amarillo/ Azul/ Verde /Rojo /Naranja <br/>
-                  </p>
-                  <p class="accessory__price">$200</p>
-                  <div class="button"><button class="buy__button">Añadir a mi cesta</button>
-                  </div>
-              </div> <!--Termina accessory 5-->
-              <div class="accessory">
-                <h3 class="accessory__name">Limpia patitas</h3>
-                <a href="#"><img src="../Base/img/imgAccessories/cleanPaw.webp" alt="accessory-paw" class="accesory__picture"/></a>             
-                  <p class="accessory__description">
-                    <strong>Tipo: </strong>Limpieza e higiene
-                    <br />
-                    <strong>Características:</strong> <br />
-                    Tamaño: Chico y grande <br />
-                    Listo para usarse<br />
-                    Diseño: Liso <br/>
-                    Material: Silicona suave <br/>
-                    <strong>Color:</strong> Rosa/ Azul <br/>
-                  </p>
-                  <p class="accessory__price">$190</p>
-                  <div class="button"><button class="buy__button">Añadir a mi cesta</button>
-                  </div>
-              </div> <!--Termina accessory 6-->
-              <div class="accessory">
-                <h3 class="accessory__name">Alfombra para lamer con ventosas</h3>
-                <a href="#"><img src="../Base/img/imgAccessories/carpetlick.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+                <h3 class="accessory__name">Plato alto</h3>
+                <a href="#"><img src="../Base/img/imgAccessories/highPlate.jpg" alt="accessory-paw" class="accesory__picture"/></a>
                   <p class="accessory__description">
                     <strong>Tipo: </strong>Artículos para Comida y Agua
                     <br />
-                    <strong>Marca: </strong>Ulmpp
-                    <br />
                     <strong>Características:</strong> <br />
-                    Tamaño: 21 cm <br />
-                    Silicona de grado alimenticio<br/>
-                    Libre de BPA<br/>
-                    Para aliviar la diversión, la ansiedad y el aburrimiento.
-                    <strong>Color:</strong> Verde/ Azul <br/>
+                    26 cm de ancho, 13 cm de alto<br />
+                    Reduce la hinchazón y la tensión del cuello<br>
+                    Acero inoxidable<br />
+                    Capacidad: 800 ml <br/>
+                    <strong>Color:</strong> Plata <br/>
                   </p>
-                  <p class="accessory__price">$400</p>
+                  <p class="accessory__price">$<span>250</span></p>
                   <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                   </div>
-              </div> <!--Termina accessory 7-->
+              </div> <!--Termina accesory 11-->
               <div class="accessory">
-                <h3 class="accessory__name">Entrenador para ir al baño</h3>
-                <a href="#"><img src="../Base/img/imgAccessories/trainerForBathroom.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+                <h3 class="accessory__name">Asiento premium de coche</h3>
+                <a href="#"><img src="../Base/img/imgAccessories/carSeat.jpg" alt="accessory-paw" class="accesory__picture"/></a>             
                   <p class="accessory__description">
-                    <strong>Tipo: </strong>Orinal de Entrenamiento
+                    <strong>Tipo: </strong>Asiento de coche para perro
                     <br />
                     <strong>Características:</strong> <br />
-                    Tamaño: 47 cm, 33 cm<br />
-                    Perfecto para patios y uso interior <br />
-                    Sistema de tres capas <br/>
-                    Material: Plástico sintético <br/>
-                    <strong>Color:</strong> Verde <br/>
+                    Cinturón de seguridad ajustable, <br/>
+                    con almohadilla impermeable, <br/> 
+                    gancho de arnés,<br/>
+                    y malla transpirable <br/>
+                    <strong>Color:</strong> 
+                    <select class="accesory__color">
+                      <option value="gris">Gris</option>
+                    </select> <br/>
                   </p>
-                  <p class="accessory__price">$370</p>
+                  <p class="accessory__price">$<span>799</span></p>
                   <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                   </div>
-              </div> <!--Termina accessory 8-->
+              </div> <!--Termina accessory 12-->
               <div class="accessory">
-                <h3 class="accessory__name">Zapatos de malla para perros</h3>
-                <a href="#"><img src="../Base/img/imgAccessories/Shoes.webp" alt="accessory-paw" class="accesory__picture"/></a>             
+                <h3 class="accessory__name">Mochila con arnes</h3>
+                <a href="#"><img src="../Base/img/imgAccessories/backpackWithHarness.jpg" alt="accessory-paw" class="accesory__picture"/></a>
                   <p class="accessory__description">
-                    <strong>Tipo: </strong>Zapatos
+                    <strong>Tipo: </strong>Mochila
                     <br />
                     <strong>Características:</strong> <br />
-                    Tamaño: 8 cm de largo, 3.5 cm de ancho <br />
-                    Adecuado para todo tamaño  de perros<br />
-                    Diseño: Liso <br/>
-                    Material: PP PE <br/>
-                    <strong>Color:</strong> Rosa/Verde/Blanca/Negro/rojo/Azul <br/>
+                    Tamaño: Pequeño 12 cm por 3 cm<br />
+                    Para perros pequeños y medianos.
+                    Material sintetico. 
+                    Con arnes incluido. <br />
+                    <strong>Color:</strong> Naranja/ Azul/ Rosa/ Rojo/ Verde <br/>
+                    <select class="accesory__color">
+                      <option value="azul">Azul</option>
+                      <option value="rosa">Rosa</option>
+                      <option value="verde">Verde</option>
+                      <option value="rojo">Rojo</option>
+                      <option value="naranja">Naranja</option>
+                    </select>
                   </p>
-                  <p class="accessory__price">$299</p>
+                  <p class="accessory__price">$<span>280</span></p>
                   <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                   </div>
-              </div> <!--Termina accessory 9-->
-              <div class="accessory">
-                <h3 class="accessory__name">Cepillo de dientes + dentrifico</h3>
-                <a href="#"><img src="../Base/img/imgAccessories/toothpaste.jpg" alt="accessory-paw" class="accesory__picture"/></a>
-                  <p class="accessory__description">
-                    <strong>Tipo: </strong>Cuidado e higiene
-                    <br />
-                    <strong>Características:</strong> <br />
-                    Tamaño: 10 x 3 x 10 centímetros <br />
-                    Diseño de cerdas de 360 ​​grados
-                    Resistencia a las mordeduras
-                    Facil lavado. <br />
-                    <strong>Color:</strong> Verde <br/>
-                  </p>
-                  <p class="accessory__price">$250</p>
-                  <div class="button"><button class="buy__button">Añadir a mi cesta</button>
-                  </div>
-            </div> <!--Termina accessory 10-->
+            </div> <!--Termina accessory 13-->
             <div class="accessory">
-              <h3 class="accessory__name">Plato alto</h3>
-              <a href="#"><img src="../Base/img/imgAccessories/highPlate.jpg" alt="accessory-paw" class="accesory__picture"/></a>
+              <h3 class="accessory__name">Chip localizador</h3>
+              <a href="#"><img src="../Base/img/imgAccessories/chip.webp" alt="accessory-paw" class="accesory__picture"/></a>
                 <p class="accessory__description">
-                  <strong>Tipo: </strong>Artículos para Comida y Agua
+                  <strong>Tipo: </strong>Localizador GPS
                   <br />
                   <strong>Características:</strong> <br />
-                  26 cm de ancho, 13 cm de alto<br />
-                  Reduce la hinchazón y la tensión del cuello<br>
-                  Acero inoxidable<br />
-                  Capacidad: 800 ml <br/>
-                  <strong>Color:</strong> Plata <br/>
+                  Tamaño: Ajustable<br />
+                  Compacto, pequeño y ligero<br />
+                  Bluetooth 4.0 <br/>
+                  Material: Plastico <br/>
+                  <strong>Color:</strong> Azul <br/>
                 </p>
-                <p class="accessory__price">$324</p>
+                <p class="accessory__price">$<span>990</span></p>
                 <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                 </div>
-            </div> <!--Termina accesory 11-->
+            </div> <!--Termina accesory 14-->
             <div class="accessory">
-              <h3 class="accessory__name">Asiento premium de coche</h3>
-              <a href="#"><img src="../Base/img/imgAccessories/carSeat.jpg" alt="accessory-paw" class="accesory__picture"/></a>             
+              <h3 class="accessory__name">Etiqueta de Identificación</h3>
+              <a href="placaIdentificacion.html"><img src="../Base/img/imgAccessories/identificationTag.jpg" alt="accessory-paw" class="accesory__picture"/></a>
                 <p class="accessory__description">
-                  <strong>Tipo: </strong>Asiento de coche para perro
+                  <strong>Tipo: </strong>Placa de identificación
+                  <br />
+                  <strong>Marca: </strong>Beirui
                   <br />
                   <strong>Características:</strong> <br />
-                  Cinturón de seguridad ajustable, <br/>
-                  con almohadilla impermeable, <br/> 
-                  gancho de arnés,<br/>
-                  y malla transpirable <br/>
-                  <strong>Color:</strong> Gris <br/>
+                  Tamaño: 25mm o 38 mm <br />
+                  Contenido personalizable.<br/>
+                  Acero inoxidable.<br/>
+                  <strong>Color:</strong>
+                  <select class="accesory__color">
+                    <option value="azul">Azul</option>
+                    <option value="plata">Plata</option>
+                    <option value="fucsia">Fucsia</option>
+                    <option value="rojo">Rojo</option>
+                  </select>
                 </p>
-                <p class="accessory__price">$799</p>
+                <p class="accessory__price">$<span>550</span></p>
                 <div class="button"><button class="buy__button">Añadir a mi cesta</button>
                 </div>
-            </div> <!--Termina accessory 12-->
-            <div class="accessory">
-              <h3 class="accessory__name">Mochila con arnes</h3>
-              <a href="#"><img src="../Base/img/imgAccessories/backpackWithHarness.jpg" alt="accessory-paw" class="accesory__picture"/></a>
-                <p class="accessory__description">
-                  <strong>Tipo: </strong>Mochila
-                  <br />
-                  <strong>Características:</strong> <br />
-                  Tamaño: Pequeño 12 cm por 3 cm<br />
-                  Para perros pequeños y medianos.
-                  Material sintetico. 
-                  Con arnes incluido. <br />
-                  <strong>Color:</strong> Naranja/ Azul/ Rosa/ Rojo/ Verde <br/>
-                </p>
-                <p class="accessory__price">$215</p>
-                <div class="button"><button class="buy__button">Añadir a mi cesta</button>
-                </div>
-          </div> <!--Termina accessory 13-->
-          <div class="accessory">
-            <h3 class="accessory__name">Chip localizador</h3>
-            <a href="#"><img src="../Base/img/imgAccessories/chip.webp" alt="accessory-paw" class="accesory__picture"/></a>
-              <p class="accessory__description">
-                <strong>Tipo: </strong>Localizador GPS
-                <br />
-                <strong>Características:</strong> <br />
-                Tamaño: Ajustable<br />
-                Compacto, pequeño y ligero<br />
-                Bluetooth 4.0 <br/>
-                Material: Plastico <br/>
-                <strong>Color:</strong> Azul <br/>
-              </p>
-              <p class="accessory__price">$218</p>
-              <div class="button"><button class="buy__button">Añadir a mi cesta</button>
-              </div>
-          </div> <!--Termina accesory 14-->
-          <div class="accessory">
-            <h3 class="accessory__name">Etiqueta de Identificación</h3>
-            <a href="placaIdentificacion.html"><img src="../Base/img/imgAccessories/identificationTag.jpg" alt="accessory-paw" class="accesory__picture"/></a>
-              <p class="accessory__description">
-                <strong>Tipo: </strong>Placa de identificación
-                <br />
-                <strong>Marca: </strong>Beirui
-                <br />
-                <strong>Características:</strong> <br />
-                Tamaño: 25mm o 38 mm <br />
-                Contenido personalizable.<br/>
-                Acero inoxidable.<br/>
-                <strong>Color:</strong> Rosa/ Plata/ Fucsia/ Rojo/ Azul <br/>
-              </p>
-              <p class="accessory__price">$299</p>
-              <div class="button"><button class="buy__button">Añadir a mi cesta</button>
-              </div>
-        </div> <!--Termina accessory 15-->
-        </div>
-      </div> <!--CONTENEDOR-->
+          </div> <!--Termina accessory 15-->
+          </div>
+        </div> <!--CONTENEDOR-->
+    </div><!--Fin store-->
     </main>
 
     
@@ -411,12 +495,13 @@
    
 </footer>
  <!--Se agrega link de js carrito de compras-->
- <script src="carritoDeCompras.js"></script>
+ <!--<script src="carritoDeCompras.js"></script> -->
  <!--Se agrega link de js  de bootstrap-->
  <script
    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
    crossorigin="anonymous"
  ></script>
+ <script src="app.js"></script>
 </body>
 </html>
