@@ -42,7 +42,7 @@
     transition: background-color;
 }
 /*Estilos al pasar el cursor sobre las letras del servicio*/
-#menu:hover{color: antiquewhite; }
+#menu:hover{color: antiquewhite;}
 
 /*Estilos de los iconos*/
 #icon{
@@ -55,15 +55,10 @@
     border-bottom: beige solid;
 
 }
-ul, ol, li {
-    list-style:none;
-}
 
-.nav > li {   
-    float:left;
-}
 
-.nav li {
+/*Estilos estandar nav y li*/
+.nav li  {
     background: color #009C88;;
     border-color: bisque;
     color:#fff;
@@ -71,19 +66,13 @@ ul, ol, li {
     padding:10px 12px;
     display:block;
 }
-
-.nav li a:hover {
-    color: white;
-    
-
-}
-
+/*Estilo posicion estandar etiquetas nav, li y ul*/
 .nav li ul {
     display:none;
     position:absolute;
     min-width:140px;
 }
-
+/*Tipo de menu que se despliega*/
 .nav li:hover > ul {
     background-color: #009C88;
     display:inline;
@@ -95,6 +84,8 @@ ul, ol, li {
         border-style: none;
     }
 } 
+
+/*Estilos al resaltar menus secundarios*/
 #prim{
     background-color: #077869;
     border-radius: 10px;
@@ -102,5 +93,6 @@ ul, ol, li {
 #sec:hover{
     background-color: #11564d;
     border-radius: 10px;
-    color: antiquewhite; }
+    color: antiquewhite;
+}
 
