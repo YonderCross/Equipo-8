@@ -1,11 +1,18 @@
 //Variables
 const  grid = document.querySelector(".accessories__grid");
-const shoppingCar = document.querySelector(".shopping-car img");
+const shoppingCar = document.querySelector(".carrito__img");
+const tablaCarrito = document.querySelector(".carrito__tabla tbody");
+const divCarrito = document.querySelector(".carrito");
 let articulosCarrito = [];
 
 function cargarEventListeners(){
     grid.addEventListener("click", agregarArticulo);   // <-- Ready for any click event
-    shoppingCar.addEventListener("mouseover", saludar)
+    shoppingCar.addEventListener("mouseover", () => {
+       divCarrito.style.transform = "scale(1)";
+    });
+    shoppingCar.addEventListener("mouseout",  () => {
+        divCarrito.style.transform = "scale(0)";
+    });
 }
 
 function agregarArticulo(e){
@@ -22,26 +29,37 @@ function leerDatos(articulo){
         nombre: articulo.querySelector(".accessory__name").textContent,
         precio: articulo.querySelector(".accessory__price span").textContent,
         color: articulo.querySelector(".accesory__color").value,
-        tamano: articulo.querySelector("accesory__tamano").valor,
         cantidad: 1
     }
     articulosCarrito = [...articulosCarrito, infoArticulo]; // <-- Al array de articulos le asigna el nuevo articula más la referencia anterior del array
     construirCarritoHTML();
 }
 function construirCarritoHTML(){
-    articulosCarrito.forEac( (articulo)=>{
-       const {imagen, nombre, precio, color} = articulo;
-       const tableRow = document.createElement("tr");
+    clearHTML();  // <-- Llama a la función clear para eliminar los elementos previos de la tabla
+    articulosCarrito.forEach( (articulo)=>{   // <-- Del array de articulos iteramos y con cada informacion de cada elemento construimos una tabla
+       const {imagen, nombre, precio, color, cantidad} = articulo;
+       const tableRow = document.createElement("tr");    // <-- Crea el html que se insertara dentro de la tabla
        tableRow.innerHTML = `
+            <td><img src="${imagen}" width="100"></td>
+            <td>${nombre}</td>
+            <td>${precio}</td>
+            <td>${color}</td>
+            <td>${cantidad}</td>
             
-       `; 
-
+       `;
+       console.log(tableRow.parentElement);
+       tablaCarrito.appendChild(tableRow);  // <--Ya creado el html lo inserta en la tabla
     });
 
 }
 function saludar(){
-   
+    console.log("Saludar");
 
+}
+function clearHTML(){  // <-- Elimina los elementos existentes en el div de los articulos para evitar que se repitan
+    while(tablaCarrito.firstChild){
+        tablaCarrito.removeChild(tablaCarrito.firstChild);
+    }
 }
 
 cargarEventListeners();
