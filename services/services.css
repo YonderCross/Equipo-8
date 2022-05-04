@@ -7,14 +7,15 @@
 /* Estilos generales container de la lista de servicios*/
 #serv{
     min-width: 280px;
+    max-width: 460px;
     min-height: 360px;
     background-color: #009C88;
     border-radius: 10px;
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
-    color: white;
-    border-top: 6px solid grey;
-    border-right: 6px solid grey;    
+    color: white; 
+    box-shadow: 10px -8px 10px 2px grey;
+
 }
 /*Estilos para la imagen*/
 #image{   
@@ -24,6 +25,8 @@
     border-bottom: 50%;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 20px;
+    
 }
 /*Estilos para el primer menu*/
 #menu{

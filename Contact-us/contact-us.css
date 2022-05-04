@@ -7,9 +7,10 @@
     background-color: #009C88;
     height: fit-content;
     border-radius: 20px;
-    border-color: black;
-    border-style: dotted;
+    border-color: grey;
     font-size: xx-large;
+    border-style: solid;
+    
 }
 
 #lft {
