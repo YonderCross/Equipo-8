@@ -123,8 +123,12 @@ h1{
         margin-bottom: -4.2rem;
     }
 }
-.shopping-car:hover{
-    
+.carrito{
+    color: var(--black);
+    background-color: var(--white);
+    transform: scale(0);
+    position: absolute;
+    z-index: 1;
 }
 .navigation{
     display: flex;
