@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../Base/css/normalize.css">
     <link rel="stylesheet" href="../Base/css/style.css">
     <link rel="stylesheet" href="community-styles.css">
@@ -42,8 +43,25 @@
         </nav>
     </header>
    
-    <section>
+    <section class="slider">
         <h1>Comunidad</h1>
+        <ul class="slider__container">
+            <li class="slider__slide">
+                <img src="../Base/img/dog-7.jpg" alt="imagen">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog-6.jpg" alt="imagen-perritos">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog-4.jpg" alt="">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog1.jpg" alt="perrito">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog2.jpeg" alt="perrito-pitbull">
+            </li>
+        </ul>
     </section>
 
     <section class="us container">
@@ -118,6 +136,8 @@
         </div>
        
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/scriptCommunity.js"></script>
 </body>
 </html>
 

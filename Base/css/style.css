@@ -129,6 +129,8 @@ h1{
     transform: scale(0);
     position: absolute;
     z-index: 1;
+    padding: 1rem;
+    border: .1rem solid var(--black);
 }
 .navigation{
     display: flex;
