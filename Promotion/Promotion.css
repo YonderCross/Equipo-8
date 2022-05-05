@@ -1,36 +1,221 @@
-.promotion__container{
+ .div{
+     display: block;
+ }
+ 
+ *{
+    
+     box-sizing: border-box;
+ }
+
+ .TAP{
+     text-align: center;
+     width: auto;
+ }
+
+ .div__origin{
+    background-color:#fff!important;
+ }
+
+ @media (min-width: 1024px){
+     .div__origin{
+        flex-direction: row;
+        justify-content: space-evenly;
+     }
+ }
+
+ .div__origin2{
+    width: auto;
+    margin: auto;
+    max-width: 1096px;
+    position: relative;
+    width: auto;
+}
+
+ .Text__promotion{
+     text-align: center;
+     vertical-align: middle;
+ }
+
+ .imag__center{
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+ }
+
+ .Conjunt_promos{
+    position: relative;
+    margin-left:-10px;
+    margin-right: -10px;
+ }
+
+ @media (min-width: 1024px){
+    .Conjunt_promos{
+     float: left;
+     width: 20%;   
+
+    }
+ }
+    
+
+ .Fond__promotion{
+     background-color: #fff;
+     margin: auto;
+     position: relative;
+     display: table;
+ }
+
+ .promos__dogs{
+     position: relative;
+     padding: 26px;
+     float: left;
+ }
+
+ @media (min-width: 1024px) {
+    .promos__dogs{
+        width: 100%;
+    }
+ }
+
+ @media (min-width: 1024px) {
+     .two__dogs{
+        float:left;
+        width:100%;
+        padding: 26px;
+        position: relative;
+     }
+ }
+ 
+ .a{
+     background-color: transparent;
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .eat__pro{
+    display: inline-block;
+ }
+
+ @media (min-width:768px){
+    .eat__pro{
+        width: initial;
+     }
+ }
+
+
+ .bones_promo{
+     display: inline;
+     width: auto;
+     max-width: 100%;
+     max-height: 50px;
+     vertical-align: middle;
+     border: 0;
+ }
+
+ .Text__promos{
+     color: #149D4A;
+ }
+
+ @media (min-width: 1024px){
+     .Text__promos{
+         font-weight: bold;
+         display: inline-block;
+     }
+ }
+
+ @media (min-width:768px){
+     .Text__promos{
+        width: initial;
+     }
+ }
+
+ .accesory__pro{
+    display: inline-block;
+ }
+
+ @media (min-width: 768px){
+     .accesory_promo{
+        width: initial;
+     }
+ }
+
+ .accery_promo{
+    display: inline;
+    width: auto;
+    max-width: 100%;
+    max-height: 50px;
+    vertical-align: middle;
+    border: 0;
+ }
+
+ .Several__several{
+    padding: 25px;
+    width: 100%;
+ }
+
+ .several__dogs{
+    width: 100%;
+ }
+
+ .Promotion__glob{
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+ }
+ @media (min-width: 1024px){
+    .Promotion__glob{
+        width: 100%;
+    }
+}
+
+
+ @media (min-width: 1024px){
+     .Several__several{
+         width: 100%;
+     }
+ }
+
+ .Conteiner__promotions{
+     max-width: 1096;
+     position: relative;
+     display: table;
+ }
+
+ .Several__origin{
+     padding-right: 13px;
+     padding-left: 13px;
+     margin-left: auto;
+     margin-right: auto;
+     position: relative;
+     width: 100%;
+     vertical-align: middle;
+ }
+
+ @media (min-width: 858px){
+    .promotion__img_1{
+        padding: 13px;
+    }
+ }
+
+ .promotion__img_1{
+     height: 410px;
+     width: 410px;
+     display: inline-block;
+}
+
+ .Med__img{
+    max-width:100%;
+    max-height:100%;
+    display: inline;
+ }
+
+ .Promotion_one{
+    column-gap: 1rem;
     align-items: center;
-    flex-direction: column;
-    text-align: center; 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
-.Promotion__text1{
-    font-size: 25px; /*Especifica la dimensión de la letra.*/
-    font-family:var(--primaryFont);
-    color: rgb(10,10,10);
-    background-position: center;
-    overflow: hidden;
-}
-
-.Promotion__img1{
-    height: auto;
-    margin-top: 20px;
-    background-position: center;
-    min-width: 95px;
-}
-.Promotion__img2{
-    height: auto;
-    margin-top: 20px;
-    background-position: center;
-    min-width: 95px;
-}
-.promotion__text2{
-    font-size: 25px; /*Especifica la dimensión de la letra.*/
-    font-family:var(--primaryFont);
-    color: rgb(10, 10, 10);
-    background-position: center;
-    overflow: hidden;
-}
+ 

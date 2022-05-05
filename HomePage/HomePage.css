@@ -1,19 +1,20 @@
 .Homepage {
-    height: 800px;
     width: 100%;
     align-items: center;
-    flex-direction: column;
-    text-align: center; 
+    flex-direction: row;
+    text-align: center;
     background-size: cover; /*especifica el tamaño de las imágenes de fondo. COVER: área de posicionamiento de fondo.*/
     background-position: center;
     background-attachment: fixed; /* determina si la posición de la imagen de fondo será fija dentro de la pantalla o se desplazará con su bloque contenedor.*/
-    background-image:url(../Base/img/dog-green.jpg) 
-}   
+    background-image:url(../Base/img/Garden_dog.jpg)
+}  
 
 .Title_Home{
-    font-size: 28px; /*Especifica la dimensión de la letra.*/
+    font-size: 20px; /*Especifica la dimensión de la letra.*/
     font-family:var(--primaryFont);
     color: rgb(230, 250, 253);
-    background-position: center;
-    overflow: hidden;
+    padding-left: 50%; /*El área de padding es el espacio entre el contenido del elemento y su borde */
+    padding-right: 4%;
+    overflow:hidden; /*que hace que el navegador oculte todos los contenidos que se salen de la caja del elemento*/
 }
+
