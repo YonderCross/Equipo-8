@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../Base/css/normalize.css">
     <link rel="stylesheet" href="../Base/css/style.css">
     <!--hoja de estilos CSS-->
@@ -30,20 +31,20 @@
                 <nav class="header__navigation">
                     <a class="header__link" href="../Contact-us/contact-us.html"><span>Contacto</span><img
                             src="../Base/img/page-us.png"></a>
-                    <a class="header__link" href="../Base/login.html"><span>Mi Usuario</span><img
+                    <a class="header__link" href="../login/login.html"><span>Mi Usuario</span><img
                             src="../Base/img/user.png"></a>
                     <a class="header__link" href="store.html"><span>Mi Carrito</span><img
                             src="../Base/img/shopping-car.png"></a>
                 </nav>
-                <a  href="../HomePage/index.html"> <span><img src="../Base/img/pawlino.png" alt="perrito" class="header__perrito"></span></a>
+                <a  href="../HomePage/HomePage.html"> <span><img src="../Base/img/pawlino.png" alt="perrito" class="header__perrito"></span></a>
             </div>
         </div>
         <nav class="navigation">
             <a href="../about-us/about-us.html" class="navigation__link">Nosotros</a>
-            <a href="../daycare-services/index.html" class="navigation__link">Servicios</a>
+            <a href="../services/services.html" class="navigation__link">Servicios</a>
             <a href="../accessories/accessories.html" class="navigation__link">Accesorios</a>
-            <a href="promos.html" class="navigation__link">Promociones</a>
-            <a href="community.html" class="navigation__link">Comunidad</a>
+            <a href="../Promotion/Promotion.html" class="navigation__link">Promociones</a>
+            <a href="../Community/community.html" class="navigation__link">Comunidad</a>
         </nav>
     </header>
 
@@ -64,27 +65,31 @@
                 </div>
             </div>
         </div>
-        <!--in this part we set the layouts for the "form" section-->
-        <div class="container" id="form">
+        <!--En esta sección se modifica el formulario-->
+        <div class="container form" id="frm">
             <div class="row justify-content-center">
+                
                 <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6  form-group"><!--Se determina la responsividad de las columnas a diferentes tamaños-->
-                    <input type="email" class="form-control-lg border-0" id="data" placeholder="Nombre" size="40">
+                    <legend> Nombre(s) </legend>
+                    <input type="text" class="form-control-lg " id="data" placeholder="" size="40">
                 </div>
                 <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6  form-group"><!--Usando clases de bootstap -->
-                    <input type="tel" class="form-control-lg border-0" id="data" placeholder="Tel." maxlength="10"
+                    <legend>Teléfono</legend>
+                    <input type="tel" class="form-control-lg " id="data" placeholder="" maxlength="10"
                         minlength="10" size="40">
                 </div>
                 <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-6 form-group">
-                    <input type="email" class="form-control-lg border-0" id="data" placeholder="e-mail" maxlength="30"
+                    <legend>Correo</legend>
+                    <input type="email" class="form-control-lg " id="data" placeholder="" maxlength="30"
                         size="40">
                 </div>
             </div>
 
 
             <!--En esta seccion definimos el formulario-->
-            <div class="row">
+            <div class="row ">
                 <div class="col-12 form-group" style="padding:10px;">
-                    <textarea class="form-control border-0" id="data1" rows="6"
+                    <textarea class="form-control" id="data1" rows="6"
                         placeholder="Introduce tu mensaje"></textarea>
                 </div>
             </div>

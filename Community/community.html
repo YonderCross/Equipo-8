@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../Base/css/normalize.css">
     <link rel="stylesheet" href="../Base/css/style.css">
     <link rel="stylesheet" href="community-styles.css">
@@ -23,24 +24,44 @@
             </div>
             <div class="header__bar">
                 <nav class="header__navigation">
-                    <a class="header__link" href="contacto.html"><span>Contacto</span><img src="../Base/img/page-us.png"></a>
-                    <a class="header__link" href="login.html"><span>Mi Usuario</span><img src="../Base/img/user.png"></a>
-                    <a class="header__link" href="store.html"><span>Mi Carrito</span><img src="../Base/img/shopping-car.png"></a>
+                    <a class="header__link" href="../Contact-us/contact-us.html"><span>Contacto</span><img
+                            src="../Base/img/page-us.png"></a>
+                    <a class="header__link" href="../login/login.html"><span>Mi Usuario</span><img
+                            src="../Base/img/user.png"></a>
+                    <a class="header__link" href="store.html"><span>Mi Carrito</span><img
+                            src="../Base/img/shopping-car.png"></a>
                 </nav>
-                <img src="../Base/img/pawlino.png" alt="perrito" class="header__perrito">
-            </div> 
+                <a  href="../HomePage/HomePage.html"> <span><img src="../Base/img/pawlino.png" alt="perrito" class="header__perrito"></span></a>
+            </div>
         </div>
         <nav class="navigation">
-            <a href="about-us/about-us.html" class="navigation__link">Nosotros</a>
-            <a href="services.html" class="navigation__link">Servicios</a>
-            <a href="store.html" class="navigation__link">Accesorios</a>
-            <a href="promos.html" class="navigation__link">Promociones</a>
-            <a href="community.html" class="navigation__link">Comunidad</a>
+            <a href="../about-us/about-us.html" class="navigation__link">Nosotros</a>
+            <a href="../daycare-services/index.html" class="navigation__link">Servicios</a>
+            <a href="../accessories/accessories.html" class="navigation__link">Accesorios</a>
+            <a href="../Promotion/Promotion.html" class="navigation__link">Promociones</a>
+            <a href="../Community/community.html" class="navigation__link">Comunidad</a>
         </nav>
     </header>
    
-    <section>
+    <section class="slider">
         <h1>Comunidad</h1>
+        <ul class="slider__container">
+            <li class="slider__slide">
+                <img src="../Base/img/dog-7.jpg" alt="imagen">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog-6.jpg" alt="imagen-perritos">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog-4.jpg" alt="">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog1.jpg" alt="perrito">
+            </li>
+            <li class="slider__slide">
+                <img src="../Base/img/dog2.jpeg" alt="perrito-pitbull">
+            </li>
+        </ul>
     </section>
 
     <section class="us container">
@@ -115,6 +136,8 @@
         </div>
        
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/scriptCommunity.js"></script>
 </body>
 </html>
 

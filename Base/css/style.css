@@ -123,6 +123,15 @@ h1{
         margin-bottom: -4.2rem;
     }
 }
+.carrito{
+    color: var(--black);
+    background-color: var(--white);
+    transform: scale(0);
+    position: absolute;
+    z-index: 1;
+    padding: 1rem;
+    border: .1rem solid var(--black);
+}
 .navigation{
     display: flex;
     flex-direction: column;

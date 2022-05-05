@@ -1,0 +1,169 @@
+{
+    "accessories": {
+        "1": {
+            "name": "Impermiable reflejante",
+            "type": "Ropa",
+            "Description": "Havenfly Impermeable para Perros con Capucha con Rayas Reflectantes，Ajustable，Resistente al Agua, Peso Ligero (Small, Amarillo)",
+            "Color": "Amarillo",
+            "Material": "Velcro",
+            "Mark": "Havenfly",
+            "Price": "449",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+
+        },
+    
+        "2": {
+            "name": "Botella de agua con filtro",
+            "type": "Accesorios para alimentos",
+            "Description": "Botella De Agua Portátil Con Seguro Y Filtro Para Perro",
+            "Color": "Amarillo/ Azul/ Verde",
+            "Material": "Plástico",
+            "Mark": "Genérica",
+            "Price": "340",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "3": {
+            "name": "Bolsa de basura portatil",
+            "type": "Higiene",
+            "Description": "Portátil",
+            "Color": "Rosa/ Verde/ Blanca/ Negro/ Rojo/ Azul",
+            "Material": "Materiales reciclados",
+            "Mark": "Luna",
+            "Price": "299",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "4": {
+            "name": "Cama iglu",
+            "type": "Camas",
+            "Description": "Comodidad en su máxima expresión. Material suave. Facil lavado.",
+            "Color": "Gris/ Azul/ Rosa",
+            "Material": "Algodon-poliestireno",
+            "Mark": "Shop Ar",
+            "Price": "350",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "5": {
+            "name": "Collar Let",
+            "type": "Seguridad",
+            "Description": "Tamaño ajustable, diseño led",
+            "Color": "Amarillo/ Azul/ Verde /Rojo /Naranja",
+            "Material": "Textil",
+            "Mark": "Innov Pet",
+            "Price": "200",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "6": {
+            "name": "Limpia patitas",
+            "type": "Higiene",
+            "Description": "Listo para su uso",
+            "Color": "Rosa/ Azul",
+            "Material": "Silicona suave",
+            "Mark": "Loxor",
+            "Price": "190",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "7": {
+            "name": "Alfombra para lamer",
+            "type": "Accesorios para alimentos",
+            "Description": "Para aliviar la diversión, la ansiedad y el aburrimiento",
+            "Color": "Verde/ Azul",
+            "Material": "Silicona de grado alimenticio",
+            "Mark": "Ulmpp",
+            "Price": "400",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "8": {
+            "name": "Entrenador para ir al baño",
+            "type": "Higiene",
+            "Description": "Sistema de tres capas",
+            "Color": "Amarillo",
+            "Material": "Plástico sintético",
+            "Mark": "Easy pet",
+            "Price": "370",
+            "url": "trainer for bathroom"
+        },
+
+        "9": {
+            "name": "Zapatos de malla para perros",
+            "type": "Ropa",
+            "Description": "Adecuado para caminatas en concreto",
+            "Color": "Rosa/Verde/Blanca/Negro/rojo/Azul",
+            "Material": "Velcro",
+            "Marca": "Malla",
+            "Price": "299",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "10": {
+            "name": "Cepillo de dientes + dentrifico",
+            "type": "Higiene",
+            "Description": "Diseño de cerdas de 360 ​​grados Resistencia a las mordeduras",
+            "Color": "Verde",
+            "Material": "Silicon alimenticio",
+            "Marca": "Trixie",
+            "Price": "250",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "11": {
+            "name": "Plato alto",
+            "type": "Accesorios para alimentos",
+            "Description": "Reduce la hinchazón y la tensión del cuello",
+            "Color": "Plata",
+            "Material": "Acero inoxidable",
+            "Mark": "One",
+            "Price": "324",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "12": {
+            "name": "Asiento de coche",
+            "type": "Seguridad",
+            "Description": "Cinturón de seguridad ajustable",
+            "Color": "Amarillo",
+            "Material": "Malla transpirable",
+            "Mark": "njnj",
+            "Price": "799",
+            "url": "https://drive.google.com/drive/folders/1dckoVnF53Z_cmEQVcKrk1Ijgnc0Bsfbl"
+        },
+
+        "13": {
+            "name": "Mochila con arnes",
+            "type": "Seguridad",
+            "Description": "Para perros pequeños y medianos",
+            "Color": "Naranja/ Azul/ Rosa/ Rojo/ Verde",
+            "Material": "Sintetico",
+            "Mark": "Nilla",
+            "Price": "215",
+            "url": "https://drive.google.com/file/d/1wB68Y3qyt38d0QQ8KmsVBAGkbaxerxHd/view"
+        },
+
+        "14": {
+            "name": "Chip localizador",
+            "type": "Seguridad",
+            "Description": "Compacto, pequeño y ligero. Bluetooth 4.0",
+            "Color": "Azul",
+            "Material": "Plastico",
+            "Mark": "Pflyn",
+            "Price": "218",
+            "url": "https://drive.google.com/file/d/1KoOOjUdbqXVdxAoKjjZxoMPgNoBnTHS7/view"
+        },
+
+        "15": {
+            "name": "Etiqueta de identificación",
+            "type": "Seguridad",
+            "Description": "Contenido personalizable.",
+            "Color": "Amarillo",
+            "Material": "Acero inoxidable",
+            "Mark": "Beirui",
+            "Price": "299",
+            "url": "https://drive.google.com/file/d/1OuJGfXTwu5EhMbBhoNeCT-Tc_UNWqT9C/view"
+        }
+    }   
+}

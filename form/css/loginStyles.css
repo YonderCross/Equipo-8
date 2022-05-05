@@ -1,0 +1,122 @@
+:root{
+    --primary: #009c88;
+    --secondary: #6acca8;
+    --third: #7ae659;
+    --fourth: #6ac1cc;
+    --primaryFont: 'Dosis', sans-serif;
+    --secondaryFont: 'Mukta', sans-serif;
+    --lightGray: #e1e1e1;
+    --black: #000;
+    --white: #fff;
+    --mainGradient: linear-gradient(to top, rgba(0,156,136,1) 0%, rgba(106,193,204,1) 41%, rgba(106,204,168,1) 73%, rgba(122,230,89,1) 100%);
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 2rem;
+    font-family: var(--primaryFont);
+    line-height: 1.5;
+    background-image: var(--mainGradient);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+[class*="container"]{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+.login{
+    margin: 2rem 0;
+    padding: .1rem;
+}
+.login__container{
+    max-width: 30rem;
+    padding: 2rem;
+}
+@media(min-width: 768px){
+    .login__container{
+        max-width: 50rem;
+        padding: 0;
+    }
+}
+.login__pawlino{
+    max-width: 27rem;
+    margin: 0 auto -30px auto;
+}
+@media(min-width:768px){
+    .login__pawlino{
+        margin-right: -25px;
+    }
+}
+
+.login__text{
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 25px;
+}
+.login__logo{
+    margin: 0 auto;
+    max-width: 10rem;
+}
+@media(min-width:768px){
+    .login__logo{
+        max-width: 15rem;
+    }
+}
+.login__heading{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 3rem 0;
+    font-size: 2.7rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.70);
+    letter-spacing: .3rem;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login__field{
+    margin-bottom: 2rem;
+    padding: .5rem 0;
+    width: 70%;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+}
+.login__field:focus{
+    outline: 3px solid #009c88;
+}
+.login__submit{
+    width: 70%;
+    background-color: var(--white);
+    color: var(--primary);
+    padding: .5rem 5rem;
+    margin-bottom: 5rem;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+@media(min-width:768px){
+    .login__submit{
+        width: 40%;
+        padding: 1rem 5rem;
+    }
+}
+.login__submit:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
