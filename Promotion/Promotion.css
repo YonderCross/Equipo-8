@@ -114,12 +114,31 @@
      border: 0;
  }
 
- .Text__promos{
-     color: #149D4A;
+ .Guau{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: var(--primaryFont);
  }
 
- @media (min-width: 1024px){
+ .Text__promos{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--black);
+    font-size: 2.5;
+    text-align: center;
+    transition-property: transform;
+    transition-duration: .3s;
+ }
+
+ .Text__promos:hover{
+    color: var(--primary);
+    transform: scale(1.2);
+ }
+ @media (min-width: 768px){
      .Text__promos{
+         flex-direction: column;
+         justify-content: space-evenly;
          font-weight: bold;
          display: inline-block;
      }
@@ -212,10 +231,22 @@
  }
 
  .Promotion_one{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: var(--primaryFont);
     column-gap: 1rem;
     align-items: center;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 
+.Promotion_two{
+    text-transform: uppercase;
+    color: var(--primary);
+    font-family: var(--primaryFont);
+    column-gap: 1rem;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
  
