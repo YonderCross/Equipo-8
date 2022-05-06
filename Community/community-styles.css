@@ -43,3 +43,16 @@
      position: relative;
      transition-property: transform;
 }
+.amigos{
+    margin-top: 5rem;
+}
+.amigos__heading{
+    text-align: center;
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 3.6rem;
+}
+.amigo__premier .amigo__heading{
+    text-align: right;
+    
+}
