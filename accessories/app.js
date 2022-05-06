@@ -3,6 +3,8 @@ const  grid = document.querySelector(".accessories__grid");
 const shoppingCar = document.querySelector(".carrito__img");
 const tablaCarrito = document.querySelector(".carrito__tabla tbody");
 const divCarrito = document.querySelector(".carrito");
+const botonVaciar = document.querySelector("#vaciar");
+const botonComprar = document.querySelector("comprar");
 let articulosCarrito = [];
 
 function cargarEventListeners(){
@@ -13,6 +15,14 @@ function cargarEventListeners(){
     shoppingCar.addEventListener("mouseout",  () => {
         divCarrito.style.transform = "scale(0)";
     });
+    divCarrito.addEventListener("mouseover", ()=>{
+        divCarrito.style.transform = "scale(1)";
+        divCarrito.classList.add("carrito__aspecto")
+    });
+    divCarrito.addEventListener("mouseout", ()=>{
+        divCarrito.style.transform = "scale(0)";
+    });
+    botonVaciar.addEventListener("click", vaciarCarrito);
 }
 
 function agregarArticulo(e){
@@ -60,6 +70,10 @@ function clearHTML(){  // <-- Elimina los elementos existentes en el div de los 
     while(tablaCarrito.firstChild){
         tablaCarrito.removeChild(tablaCarrito.firstChild);
     }
+}
+function vaciarCarrito(){
+    clearHTML();
+    articulosCarrito = [];
 }
 
 cargarEventListeners();
