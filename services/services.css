@@ -87,7 +87,6 @@
         border-style: none;
     }
 } 
-
 /*Estilos al resaltar menus secundarios*/
 #prim{
     background-color: #077869;
@@ -98,4 +97,34 @@
     border-radius: 10px;
     color: antiquewhite;
 }
+#prim2{
+    background-color: #0a5b50;
+    border-radius: 10px;
+}
 
+
+table {
+    max-width: 800px;
+    max-height: 150px;
+}
+
+#img_tbl_blk{
+    
+    max-width: 100px;
+    border-radius: 50%;
+    border-bottom: beige solid;
+}
+#img_tbl_wth{
+    
+    max-width: 100px;
+    border-radius: 50%;
+    border-bottom:solid black;
+}
+
+thead{
+    color: beige;
+}
+
+tbody{
+    color: white;
+}
