@@ -1,5 +1,12 @@
 window.swiper = new Swiper({
     el: ".slider__container", // <-- Parent element
     slideClass: "slider__slide",  // <-- No lleva punto
-    createElements: true
+    createElements: true,
+    autoplay: {
+        delay: 5000
+    }, 
+    loop: true,
+    spaceBetween: 0,
+    pagination: true,
+    navigation: true
 });
