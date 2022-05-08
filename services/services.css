@@ -8,14 +8,20 @@
 #serv{
     min-width: 280px;
     max-width: 460px;
-    min-height: 360px;
+    min-height: 450px;
     background-color: #009C88;
     border-radius: 10px;
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
     color: white; 
+    font-size: large;
+    font-weight: 900;
     box-shadow: 10px -8px 10px 2px grey;
-
+}
+@media only screen and (max-width: 600px){
+    #serv{
+        max-height: 700px;
+    }
 }
 /*Estilos para la imagen*/
 #image{   
@@ -51,11 +57,13 @@
 #icon{
     margin-left: 15px;
     margin-top: 10px;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 75%;
+    max-height: 75%;
     border-radius: 100%;
     background-color: #099683;
     border-bottom: beige solid;
+    position: relative;
+    left: 25px;
 
 }
 
@@ -86,6 +94,11 @@
         display:block;
         border-style: none;
     }
+}
+/*Estilo del hover sobre Hotel y Guardería*/
+ #a :hover > ul {
+    display:block;
+    border-style: none;
 } 
 /*Estilos al resaltar menus secundarios*/
 #prim{
@@ -99,15 +112,9 @@
 }
 #prim2{
     background-color: #0a5b50;
-    border-radius: 10px;
+    border-radius: 50px;
 }
-
-
-table {
-    max-width: 800px;
-    max-height: 150px;
-}
-
+/*Estilos imagenes de tabla*/
 #img_tbl_blk{
     
     max-width: 100px;
@@ -120,7 +127,27 @@ table {
     border-radius: 50%;
     border-bottom:solid black;
 }
-
+/*tamaño de tabla*/
+table {
+    max-width: 800px;
+    max-height: 150px;
+}
+    /*tamaño responsivo*/
+@media only screen and (max-width: 540px) {
+    table{
+        font-size: smaller;
+        max-width: 300px;
+    }
+    #img_tbl_wth, #img_tbl_blk{
+        max-width: 40px;
+    }
+    #icon{
+        max-width: 100%;
+        position: relative;
+        left: 0px;
+    }
+/*Estilos de tabla*/
+}
 thead{
     color: beige;
 }
