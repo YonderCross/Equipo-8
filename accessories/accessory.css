@@ -3,13 +3,13 @@
     text-align: center;
 }
 .accessory__title{
-    text-align:left;
+    text-align:center;
     font-family: 'Dosis', sans-serif;
     font-size: 4rem;
-    font-weight: 100;
     margin-bottom: 0;
     margin-top: 2rem;
-    margin-left: 2rem;
+    color: var(--primary);
+    font-weight: 700;
 
 }
 .accessory__label{
@@ -37,6 +37,7 @@
     justify-content: flex-start; /*alinea elementos en forma horizontal*/
     margin-left: 4rem;
     margin-right: 4rem;
+    margin-top:19 rem ;
 }
 
 /*tablet*/
@@ -73,11 +74,14 @@
 .accessory__text{
     text-align: left;
 }
+
 .accessory__price{
-    font-size: 6rem;
-    color: var(--primary);
+    font-size: 4rem;
+    color: black;
     font-weight: 900;
-    text-align: center;
+    text-align: left;
+    margin-top: 4rem;
+    
 }
 
 .buy__button {
@@ -96,6 +100,8 @@
     padding-left: -10px;
     transition: background-color;
     transition-duration: .5s;
+    width: 29rem;
+    height: 6rem;
 }
 .button {
     text-align: center;
@@ -105,4 +111,13 @@
    background-color: var(--primary);
    color: white;
 }
-/*contenedor del producto*/
+
+.carousel__foot {
+    font-family: 'Dosis', sans-serif ;
+    font-weight: bold;
+    color: black;
+    margin-left: 15rem;
+    text-decoration: none;
+    text-align:center;
+}
+
