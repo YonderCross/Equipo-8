@@ -49,21 +49,21 @@
 
 }
 
-.accessories__grid{
+#accessories__grid{
     display: grid; /*permite colocar en filas y columnas*//*en un dispositivo movil se vera uns aola columna y muchas filas*/
     gap: 4rem; /*distancia entre cada elemento*/
 }
 
 /*tablet*/
 @media(min-width: 768px){
-    .accessories__grid{
+    #accessories__grid{
         grid-template-columns: 1fr 1fr; /* tamano de columnas puede poner 600px 800 px o si quieres dejarlos igual poner una fraccion y una fraccion*/ 
     }
 }
 
 /*compu*/
 @media(min-width: 1200px){
-    .accessories__grid{
+    #accessories__grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }*/
