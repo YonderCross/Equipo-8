@@ -43,27 +43,27 @@
     font-size: 4rem;
     text-transform: uppercase;
     margin-bottom: 3rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     text-align: center;
     margin-bottom: 10rem;
 
 }
 
-.accessories__grid{
+#accessories__grid{
     display: grid; /*permite colocar en filas y columnas*//*en un dispositivo movil se vera uns aola columna y muchas filas*/
     gap: 4rem; /*distancia entre cada elemento*/
 }
 
 /*tablet*/
 @media(min-width: 768px){
-    .accessories__grid{
+    #accessories__grid{
         grid-template-columns: 1fr 1fr; /* tamano de columnas puede poner 600px 800 px o si quieres dejarlos igual poner una fraccion y una fraccion*/ 
     }
 }
 
 /*compu*/
 @media(min-width: 1200px){
-    .accessories__grid{
+    #accessories__grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }*/
@@ -101,9 +101,8 @@
 .accesory__picture{
     height: 30rem;
     width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0%;
+    margin-left: 0.5rem;
+    text-align: center;
 }
 
 /*usar para la clase zoom*/
@@ -159,4 +158,12 @@
     color: var(--white);
     background-color: var(--primary);
     border: 1px solid var(--white);
+}
+.carouselButton{
+    width: 6000%;
+    max-height: 460px;
+}
+.carousel-control-next-icon{
+    content: "<";
+    font-size: 400%;
 }
