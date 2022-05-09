@@ -35,6 +35,10 @@
     max-width: 120rem;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
+}
+ul{
+    list-style: none;
 }
 .slider__slide{
      height: 100%;
@@ -42,4 +46,43 @@
      width: 100%;
      position: relative;
      transition-property: transform;
+}
+.amigos{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.amigos__heading{
+    text-align: center;
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 3.6rem;
+}
+.amigo__premier .amigo__heading{
+    text-align: right;
+}
+.amigo__imagen{
+    max-width: 15rem;
+}
+.amigo__premier .amigo__imagen{
+    display: inline;
+
+}
+.amigo__img{
+    display: flex;
+    justify-content: flex-end;
+}
+.amigo__boton{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--primary);
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+}
+.amigo__boton:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+#slider__imagen{
+    width: 120rem;
 }
