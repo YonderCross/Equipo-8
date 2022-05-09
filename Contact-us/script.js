@@ -41,5 +41,4 @@ function validarFormulario(val){
 }
 
 function validacion(){
-
 }
