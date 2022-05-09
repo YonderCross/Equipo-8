@@ -1,5 +1,5 @@
 //Variables
-const  grid = document.querySelector(".accessories__grid");
+const  grid = document.querySelector(".accessory");
 const shoppingCar = document.querySelector(".carrito__img");
 const tablaCarrito = document.querySelector(".carrito__tabla tbody");
 const divCarrito = document.querySelector(".carrito");
