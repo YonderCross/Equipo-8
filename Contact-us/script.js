@@ -6,6 +6,7 @@ const mensaje = document.getElementById("data1");
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 const expresionRegular = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+let nom, phon, corr, mens;
 
 eventListeners()
 
@@ -19,21 +20,22 @@ function validarFormulario(val){
         
     if(val.target.value != 0){
         if((val.target.type == "text")){
-            console.log("nombre");
+            nom = true;  
         }
         else if(val.target.type == "tel"){
             if(this.value.length == 10){
-                console.log("correcto"); 
+                phon = true;
             }
             else{
-                console.log("incorrecto"); 
+                phon = false;
             }
         }
         else if(val.target.type == "email"){
-            if(expresionRegular.test(val.target.value))
-                console.log("funciona");
+            if(expresionRegular.test(val.target.value)){
+                corr = true;
+            }
             else{
-                console.log("no funciona")
+                corr = false;
             }
         }
     }
@@ -41,4 +43,17 @@ function validarFormulario(val){
 }
 
 function validacion(){
+    if(phon == false){
+        document.getElementById("warning").innerHTML = "¡Por favor ingrese un número valido!";
+    }
+    else if(corr==false){
+        document.getElementById("warning").innerHTML = "¡Por favor ingrese un email valido!";
+    }
+    else if(nom==true && phon==true && corr==true){
+        document.getElementById("warning").innerHTML = "¡Mensaje enviado exitosamente!";
+    }
+    else{
+        document.getElementById("warning").innerHTML = "¡Información no valida!";
+
+    }
 }
