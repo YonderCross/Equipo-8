@@ -44,16 +44,16 @@ function validarFormulario(val){
 
 function validacion(){
     if(phon == false){
-        document.getElementById("warning").innerHTML = "¡Por favor ingrese un número valido!";
+        document.getElementById("warning").innerHTML = "¡Por favor ingrese un número válido!";
     }
     else if(corr==false){
-        document.getElementById("warning").innerHTML = "¡Por favor ingrese un email valido!";
+        document.getElementById("warning").innerHTML = "¡Por favor ingrese un email válido!";
     }
     else if(nom==true && phon==true && corr==true){
         document.getElementById("warning").innerHTML = "¡Mensaje enviado exitosamente!";
     }
     else{
-        document.getElementById("warning").innerHTML = "¡Información no valida!";
+        document.getElementById("warning").innerHTML = "¡Información no válida!";
 
     }
 }
