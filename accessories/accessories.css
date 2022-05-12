@@ -49,21 +49,21 @@
 
 }
 
-#accessories__grid{
+.accessories__grid{
     display: grid; /*permite colocar en filas y columnas*//*en un dispositivo movil se vera uns aola columna y muchas filas*/
     gap: 4rem; /*distancia entre cada elemento*/
 }
 
 /*tablet*/
 @media(min-width: 768px){
-    #accessories__grid{
+    .accessories__grid{
         grid-template-columns: 1fr 1fr; /* tamano de columnas puede poner 600px 800 px o si quieres dejarlos igual poner una fraccion y una fraccion*/ 
     }
 }
 
 /*compu*/
 @media(min-width: 1200px){
-    #accessories__grid{
+    .accessories__grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }*/
@@ -76,7 +76,7 @@
     align-items: center;
     margin-left: 5rem;
     margin-right: 5rem;
-    text-align: center;
+    text-align: center;;
 }
 
 .accessory__name{
@@ -84,13 +84,14 @@
     font-size: 2rem;
     font-weight: 700;
     text-transform:uppercase;
+    text-align: center;
 }
 .accessory__description{
     font-size: 1.6rem;
     text-align: left;
 }
 .accessory__price{
-    font-size: 3rem;
+    font-size: 3.rem;
     color: black;
     font-weight: 900;
     margin-top: 0%;
@@ -116,19 +117,22 @@
 /*  CARRITO */
 .carrito{
     color: var(--black);
-    background-color: var(--white);
     transform: scale(0);
     position: absolute;
     z-index: 1;
     padding: 1rem;
     border: .1rem solid var(--black);
-    background-color: var(--primary);
+    background-image: var(--mainGradient);
+    border-radius: .7rem;
 }
 
 .carrito__tabla{
-    background-color: var(--white);
+    background-color: rgb(255, 255, 255, .6);
     color: var(--black);
     width: 100%;
+}
+.carrito__tabla th{
+    text-align: center;
 }
 .carrito__tabla td{
     border: 1px solid var(--black);
@@ -139,7 +143,7 @@
     text-align: center;
 }
 .carrito__botones{
-    background-color: var(--primary);
+
     padding: .5rem;
     display: flex;
     justify-content: space-around;
@@ -159,6 +163,8 @@
     background-color: var(--primary);
     border: 1px solid var(--white);
 }
+
+/* Flechas carrousel */
 .carouselButton{
     width: 6000%;
     max-height: 460px;
@@ -166,4 +172,8 @@
 .carousel-control-next-icon{
     content: "<";
     font-size: 400%;
+}
+.accesory__color, .accesory__tamano{
+    display: block;
+    margin-bottom: 1.5rem;
 }
