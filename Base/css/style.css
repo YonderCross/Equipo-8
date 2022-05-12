@@ -93,6 +93,11 @@ h1{
     text-decoration: none;
     text-transform: uppercase;
     color: var(--black);
+    margin-right: 1rem;
+}
+.header__link img{
+    display: block;
+    margin: .5rem;
 }
 .header__link:hover{
     color: var(--white);
