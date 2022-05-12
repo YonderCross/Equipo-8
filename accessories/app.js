@@ -26,7 +26,7 @@ function cargarEventListeners(){
 }
 
 function agregarArticulo(e){
-    e.preventDefault();
+    
     if(e.target.classList.contains("buy__button")){       // <-- Cerciora que se ha hecho click en el boton de comprar
         const articuloSeleccionado = e.target.parentElement.parentElement;   // <-- Accede al elemento padre padre que es el contenedor de todo el articulo
         leerDatos(articuloSeleccionado);   // <-- Llama al método leer datos y le pasa por argumento el articulo seleccionado
@@ -52,10 +52,10 @@ function construirCarritoHTML(){
        tableRow.innerHTML = `
             <td><img src="${imagen}" width="100"></td>
             <td>${nombre}</td>
-            <td>${precio}</td>
+            <td>$${precio}</td>
             <td>${color}</td>
             <td>${cantidad}</td>
-            
+            <td><a class="carrito__eliminar">X</a></td>
        `;
        console.log(tableRow.parentElement);
        tablaCarrito.appendChild(tableRow);  // <--Ya creado el html lo inserta en la tabla
