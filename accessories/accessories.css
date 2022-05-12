@@ -131,6 +131,7 @@
 }
 .carrito__contenedor{
     position: relative;
+    
 }
 
 .carrito__tabla{
@@ -184,7 +185,7 @@
 .carrito__eliminar{
     text-decoration: none;
     color: var(--white);
-    background-color: rgb(231, 47, 47);
+    background-color: rgb(225, 37, 37);
     padding: .5rem 1rem;
     border-radius: 50%;
     font-size: 1.3rem;

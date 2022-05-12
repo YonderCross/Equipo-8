@@ -22,6 +22,7 @@ function cargarEventListeners(){
     divCarrito.addEventListener("mouseout", ()=>{
         divCarrito.style.transform = "scale(0)";
     });
+    tablaCarrito.addEventListener("click", eliminarArticulo);
     botonVaciar.addEventListener("click", vaciarCarrito);
 }
 
@@ -39,15 +40,34 @@ function leerDatos(articulo){
         nombre: articulo.querySelector(".accessory__name").textContent,
         precio: articulo.querySelector(".accessory__price span").textContent,
         color: articulo.querySelector(".accesory__color").value,
+        id: articulo.querySelector(".buy__button").getAttribute("data-id"),
         cantidad: 1
     }
-    articulosCarrito = [...articulosCarrito, infoArticulo]; // <-- Al array de articulos le asigna el nuevo articula más la referencia anterior del array
+    const existe = articulosCarrito.some( articulo =>{   // <-- El método some de clase array itera sobre un array y verifica que el elemento en turno del array cumpla con cierta condición. Si se cumple devuelve un true
+        return articulo.id === infoArticulo.id;
+    });
+    if(existe){   
+        console.log("Ya existe");
+        const articulosExistentes = articulosCarrito.map( articulo=>{
+            if(articulo.id === infoArticulo.id){
+                articulo.cantidad++;
+                return articulo;
+            }
+            else{
+                return articulo;
+            }
+        });
+            articulosCarrito = [...articulosExistentes]
+    }
+    else{
+        articulosCarrito = [...articulosCarrito, infoArticulo];  // <-- Al array de articulos le asigna el nuevo articula más la referencia anterior del array
+    }
     construirCarritoHTML();
 }
 function construirCarritoHTML(){
     clearHTML();  // <-- Llama a la función clear para eliminar los elementos previos de la tabla
     articulosCarrito.forEach( (articulo)=>{   // <-- Del array de articulos iteramos y con cada informacion de cada elemento construimos una tabla
-       const {imagen, nombre, precio, color, cantidad} = articulo;
+       const {imagen, nombre, precio, color, cantidad, id} = articulo;
        const tableRow = document.createElement("tr");    // <-- Crea el html que se insertara dentro de la tabla
        tableRow.innerHTML = `
             <td><img src="${imagen}" width="100"></td>
@@ -55,9 +75,8 @@ function construirCarritoHTML(){
             <td>$${precio}</td>
             <td>${color}</td>
             <td>${cantidad}</td>
-            <td><a class="carrito__eliminar">X</a></td>
+            <td><a class="carrito__eliminar" href="#" data-id="${id}">x</a></td>
        `;
-       console.log(tableRow.parentElement);
        tablaCarrito.appendChild(tableRow);  // <--Ya creado el html lo inserta en la tabla
     });
 
@@ -75,5 +94,12 @@ function vaciarCarrito(){
     clearHTML();
     articulosCarrito = [];
 }
-
+function eliminarArticulo(e){
+    if(e.target.classList.contains("carrito__eliminar")){
+        
+        const articuloAEliminar = e.target.getAttribute("data-id");
+        articulosCarrito = articulosCarrito.filter( articulo=> articulo.id !== articuloAEliminar);
+        construirCarritoHTML();
+    }
+}
 cargarEventListeners();
