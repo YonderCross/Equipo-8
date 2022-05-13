@@ -160,3 +160,7 @@
     background-color: var(--primary);
     border: 1px solid var(--white);
 }
+
+.carousel-control-next-icon {
+    font-size: 500px;
+}
