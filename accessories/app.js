@@ -1,6 +1,5 @@
 //Variables
-const body = document.querySelector("body");
-const  grid = document.querySelector(".accessories__grid");
+const  grid = document.querySelector(".accessory");
 const shoppingCar = document.querySelector(".carrito__img");
 const tablaCarrito = document.querySelector(".carrito__tabla tbody");
 const divCarrito = document.querySelector(".carrito");
@@ -82,7 +81,7 @@ function construirCarritoHTML(){
             <td>$${precio}</td>
             <td>${color}</td>
             <td>${cantidad}</td>
-            <td><a class="carrito__eliminar" href="#" data-id="${id}">x</a></td>
+            <td></td>
        `;
        tablaCarrito.appendChild(tableRow);  // <--Ya creado el html lo inserta en la tabla
     });

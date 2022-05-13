@@ -1,0 +1,10 @@
+.carousel__foot {
+    text-align:center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 10px;
+    color: #000000;
+    margin-top: 10px;
+    line-height:normal;
+}
