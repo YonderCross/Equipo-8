@@ -65,10 +65,12 @@
  }
 
  .Fond__promotion{
-     background-color: #fff;
-     margin: auto;
-     position: relative;
-     display: table;
+   text-decoration: none;
+   text-transform: uppercase;
+   text-align: center;
+   transition-property: transform;
+   display: flex;
+   flex-direction: column-reverse;
  }
 
  .promos__dogs{
@@ -162,6 +164,7 @@
  }
 
  .Several__several{
+    position: relative;
     padding: 25px;
     text-transform: uppercase;
     
@@ -180,9 +183,12 @@
 
  .Promotion__glob{
     position: relative;
-    padding: 0;
-    background-color: transparent;
-    text-transform: uppercase;
+    padding: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    float: left;
  }
 
  @media (min-width: 1024px){
@@ -190,12 +196,6 @@
         flex-direction: row;
         justify-content: space-evenly;
      }
- }
-
- .Conteiner__promotions{
-     max-width: 1096;
-     position: relative;
-     display: table;
  }
 
  .Several__origin{
@@ -216,7 +216,6 @@
 
  .promotion__img_1{
      height: 410px;
-     width: 410px;
      display: inline-block;
 }
 
