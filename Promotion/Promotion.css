@@ -36,8 +36,11 @@
 }
 
  .Text__promotion{
-    font-family: var(--primaryFont);
-    font-weight: 700;
+   font-family: var(--primaryFont);
+   font-weight: 400;
+   font-size: 2rem;
+   text-transform: uppercase;
+   text-align: center;
  }
 
  .imag__center{
