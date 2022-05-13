@@ -29,7 +29,7 @@ form.addEventListener("submit", e=>{
   
     else{
         //registrar(nombr,apelli,corre,tele,dire,contras);
-        parrafo.innerHTML = "Enviado"
+        parrafo.innerHTML = "Registro Exitoso"
         registrar();
     }
 })
