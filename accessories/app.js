@@ -183,7 +183,7 @@ function construirTotal(){
         <p class="total__texto"><strong>Total </strong>${ cantidad + 250}</p>
         <div class="total__botones">
             <form>
-                <input action="GET" class="boton__pagar" type="submit" value="Pagar">
+                <button class="boton__pagar" id="pagar" onclick="pagarCesta()">Pagar</button> 
             </form>
         </div>
     `;
@@ -194,3 +194,28 @@ function sincronizarLocalStorage(){
     localStorage.setItem( "carrito", JSON.stringify(articulosCarrito));
 }
 cargarEventListeners();
+
+/*+++++ PETICION FETCH *******/
+    /**Para hacer peticiones POST, fetch admite un segundo parametro.
+    fetch(url, {
+        method: "POST",
+        body: Los datos que enviemeos. Si es un objeto hay que con JSON.stringify(datos),
+        headers: {
+            cabecera de información sobre lo que  estamos enviando
+
+        }
+    })
+*/
+
+function pagarCesta(){
+   const carritoJSON = JSON.stringify(articulosCarrito) || [];
+   fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: carritoJSON, 
+    headers: {
+        "Content-type": "application/json" //<--Informamos que estamos enviando un objeto en formato JSON
+    }
+    })
+        .then(res => res.json())
+        .then(data => console.log(data))
+}
