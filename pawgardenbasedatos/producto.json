@@ -1,0 +1,408 @@
+[
+   { "idProducto": 1,
+    "nombre": "impermeable reflejante",
+    "tipo": "ropa",
+    "cantidad": 12,
+    "precio": 449,
+    "color": "amarillo",
+    "tamano": "30 cm",
+    "material": "velcro",
+    "marca": "Havenfly"
+    },
+    {
+    "idProducto": 2,
+    "nombre": "impermiable reflejante",
+    "tipo": "ropa",
+    "cantidad": 25,
+    "precio": 449,
+    "color": "amarillo",
+    "tamano": "60 cm",
+    "material": "velcro",
+    "marca": "Havenfly"
+    },
+    {
+    "idProducto": 3,
+    "nombre": "bolsa de basura portatil",
+    "tipo": "higiene",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "azul",
+    "tamano": "8 cm",
+    "material": "pp pe",
+    "marca": "luna"
+    },
+    {
+    "idProducto": 4,
+    "nombre": "bolsa de basura portatil",
+    "tipo": "higiene",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "amarillo",
+    "tamano": "8 cm",
+    "material": "pp pe",
+    "marca": "luna"
+    },
+    
+    {
+    "idProducto": 5,
+    "nombre": "bolsa de basura portatil",
+    "tipo": "higiene",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "verde",
+    "tamano": "8 cm",
+    "material": "pp pe",
+    "marca": "luna"
+    },
+    
+    {
+    "idProducto": 6,
+    "nombre": "bolsa de basura portatil",
+    "tipo": "higiene",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "rojo",
+    "tamano": "8 cm",
+    "material": "pp pe",
+    "marca": "luna"
+    },
+    
+    {
+    "idProducto": 7,
+    "nombre": "bolsa de basura portatil",
+    "tipo": "higiene",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "blanco",
+    "tamano": "8 cm",
+    "material": "pp pe",
+    "marca": "luna"
+    },
+    {
+    "idProducto": 8,
+    "nombre": "botella de agua",
+    "tipo": "accesorios para alimentos",
+    "cantidad": 32,
+    "precio": 340,
+    "color": "amarillo",
+    "tamano": "19 cm",
+    "material": "acero inoxidable",
+    "marca": "Generica"
+    },
+    {
+    "idProducto": 9,
+    "nombre": "botella de agua",
+    "tipo": "accesorios para alimentos",
+    "cantidad": 10,
+    "precio": 340,
+    "color": "azul",
+    "tamano": "19 cm",
+    "material": "acero inoxidable",
+    "marca": "Generica"
+    },
+    {
+    "idProducto": 10,
+    "nombre": "botella de agua",
+    "tipo": "accesorios para alimentos",
+    "cantidad": 8,
+    "precio": 340,
+    "color": "verde",
+    "tamano": "19 cm",
+    "material": "acero inoxidable",
+    "marca": "Generica"
+    },
+    {
+        "idProducto": 11,
+        "nombre": "cama iglu",
+        "tipo": "camas",
+        "cantidad": 1,
+        "precio": 350.0,
+        "color": "gris",
+        "tamano": "60 cm" ,
+        "material": "algodon-poliestireno",
+        "marca": "Shop Ar"
+},
+    {
+    "idProducto": 12,
+    "nombre": "cama iglu",
+    "tipo": "camas",
+    "cantidad": 12,
+    "precio": 350,
+    "color": "azul",
+    "tamano": "60 cm",
+    "material": "algodón-poliestireno",
+    "marca": "Shop Ar"
+    },
+    {
+    "idProducto": 13,
+    "nombre": "cama iglu",
+    "tipo": "camas",
+    "cantidad": 19,
+    "precio": 350,
+    "color": "rosa",
+    "tamano": "60 cm",
+    "material": "algodón-poliestireno",
+    "marca": "Shop Ar"
+    },
+    {
+    "idProducto": 14,
+    "nombre": "collar led",
+    "tipo": "seguridad",
+    "cantidad": 55,
+    "precio": 200,
+    "color": "amarillo",
+    "tamano": "30 cm",
+    "material": "textil",
+    "marca": "Innov Pet"
+    },
+    {
+    "idProducto": 15,
+    "nombre": "collar led",
+    "tipo": "seguridad",
+    "cantidad": 21,
+    "precio": 200,
+    "color": "azul",
+    "tamano": "30 cm",
+    "material": "textil",
+    "marca": "Innov Pet"
+    },
+    {
+    "idProducto": 16,
+    "nombre": "collar led",
+    "tipo": "seguridad",
+    "cantidad": 13,
+    "precio": 200,
+    "color": "verde",
+    "tamano": "30 cm",
+    "material": "textil",
+    "marca": "Innov Pet"
+    },
+    {
+    "idProducto": 17,
+    "nombre": "collar led",
+    "tipo": "seguridad",
+    "cantidad": 29,
+    "precio": 200,
+    "color": "rojo",
+    "tamano": "30 cm",
+    "material": "textil",
+    "marca": "Innov Pet"
+    },
+    {
+    "idProducto": 18,
+    "nombre": "collar led",
+    "tipo": "seguridad",
+    "cantidad": 15,
+    "precio": 200,
+    "color": "naranja",
+    "tamano": "30 cm",
+    "material": "textil",
+    "marca": "Innov Pet"
+    },
+    {
+    "idProducto": 20,
+    "nombre": "limpia patitas",
+    "tipo": "higiene",
+    "cantidad": 15,
+    "precio": 190,
+    "color": "azul",
+    "tamano": "7 cm",
+    "material": "silicona suave",
+    "marca": "Loxor"
+    },
+    {
+    "idProducto": 21,
+    "nombre": "alfombra para lamer",
+    "tipo": "accesorios para alimentos" ,
+    "cantidad": 19,
+    "precio": 400,
+    "color": "verde",
+    "tamano": "21 cm",
+    "material": "silicona grado alimenticio",
+    "marca": "Ulmpp"
+    },
+    {
+    "idProducto": 22,
+    "nombre": "alfombra para lamer",
+    "tipo": "accesorios para alimentos" ,
+    "cantidad": 23,
+    "precio": 400,
+    "color": "azul",
+    "tamano": "21 cm",
+    "material": "silicona grado alimenticio",
+    "marca": "Ulmpp"
+    },
+    {
+    "idProducto": 23,
+    "nombre": "entrenador para ir al bano",
+    "tipo": "higiene",
+    "cantidad": 45,
+    "precio": 370,
+    "color": "verde",
+    "tamano": "43 cm",
+    "material": "plástico sintetico",
+    "marca": "Easy pet"
+    },
+    {
+    "idProducto": 24,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 5,
+    "precio": 299,
+    "color": "rosa",
+    "tamano": "8 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    {
+    "idProducto": 25,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 22,
+    "precio": 299,
+    "color": "verde",
+    "tamano": "8 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 26,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 34,
+    "precio": 299,
+    "color": "blanco",
+    "tamano": "8 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 27,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 43,
+    "precio": 299,
+    "color": "negro",
+    "tamano": "8 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 28,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 13,
+    "precio": 299,
+    "color": "rojo",
+    "tamano": "8 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 29,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 21,
+    "precio": 299,
+    "color": "azul",
+    "tamano": "8 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    {
+    "idProducto": 30,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "rosa",
+    "tamano": "12 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 31,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "verde",
+    "tamano": "12 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 31,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 22,
+    "precio": 299,
+    "color": "blanco",
+    "tamano": "12 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 33,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 32,
+    "precio": 299,
+    "color": "negro",
+    "tamano": "12 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    
+    {
+    "idProducto": 34,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 12,
+    "precio": 299,
+    "color": "rojo",
+    "tamano": "12 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    {
+    "idProducto": 35,
+    "nombre": "zapatitos de malla para perros",
+    "tipo": "ropa",
+    "cantidad": 14,
+    "precio": 299,
+    "color": "azul",
+    "tamano": "12 cm",
+    "material": "tejido",
+    "marca": "Malla"
+    },
+    {
+    "idProducto": 45,
+    "nombre": "asiento Premium de coche",
+    "tipo": "seguridad",
+    "cantidad": 21,
+    "precio": 799,
+    "color": "negro",
+    "tamano": "130 cm",
+    "material": "velcro",
+    "marca": "Njnj"
+    },
+    {
+    "idProducto": 46,
+    "nombre": "placa de identificacion",
+    "tipo": "seguridad",
+    "cantidad": 13,
+    "precio": 299,
+    "color": "plata",
+    "tamano": "13 cm",
+    "material": "sintetico",
+    "marca": "Berirui"
+    }
+]

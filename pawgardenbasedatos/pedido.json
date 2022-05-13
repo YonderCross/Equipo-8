@@ -1,0 +1,72 @@
+[
+    {
+        "idPedido": 1,
+        "idUsuario": 2,
+        "idProducto": 11,
+        "estatus": 0,
+        "cantidad": 1,
+        "fecha": "",
+        "direccionEnvio": "calle Josefa col. Jardines no. 133"
+    },
+
+    {
+        "idPedido": 2,
+        "idUsuario": 2,
+        "idProducto": 10,
+        "estatus": 0,
+        "cantidad": 3,
+        "fecha": "",
+        "direccionEnvio": "avenida Presa Osorio col. Babilonia no. 458"
+    },
+
+    {
+        "idPedido": 3,
+        "idUsuario": 3,
+        "idProducto": 1,
+        "estatus": 2,
+        "cantidad": 2,
+        "fecha": "2022-05-01",
+        "direccionEnvio": "calle Malinche col. Benito Juarez no.106"
+    },
+
+    {
+        "idPedido": 4,
+        "idUsuario": 4,
+        "idProducto": 3,
+        "estatus": 1,
+        "cantidad": 1,
+        "fecha": "2022-05-04",
+        "direccionEnvio": "av. las torres col. Vicente Guerrero no.45"
+    },
+
+    {
+        "idPedido": 5,
+        "idUsuario": 7,
+        "idProducto": 5,
+        "estatus": 2,
+        "cantidad": 4,
+        "fecha": "2022-05-10",
+        "direccionEnvio": "av. 507 col. San Juan de Aragón no.74"
+    },
+
+    {
+        "idPedido": 6,
+        "idUsuario": 3,
+        "idProducto": 2,
+        "estatus": 1,
+        "cantidad": 2,
+        "fecha": "2022-05-11",
+        "direccionEnvio": "calle polanco col. Jose Vicente Villada  no.239"
+    },
+
+    {
+        "idPedido": 7,
+        "idUsuario": 3,
+        "idProducto": 7,
+        "estatus": 4,
+        "cantidad": 3,
+        "fecha": "2022-05-11",
+        "direccionEnvio": "calle Porres Baranda col. La Penal no.200 "
+    }
+
+]

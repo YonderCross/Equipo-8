@@ -1,0 +1,42 @@
+{
+    "idUsuario": 3,
+    "nombre": "Miguel",
+    "apellido1": "Vera",
+    "apellido2": "Serrano",
+    "correo": "mvs@gmail.com",
+    "telefono": 5455689032,
+    "direccion": "calle jun Sacinto col. Mirador no. 2",
+    "contrasena": "Patitoenojao1"
+}
+
+
+{
+        "idMascota": 1,
+        "idUsuario": 1,
+        "nombre": "Pawlino",
+        "edad": 7,
+        "raza": "criollo",
+        "sexo": "Macho"
+    }
+
+{
+        "idProducto": 2,
+        "nombre": "correa",
+        "tipo": "ropa",
+        "cantidad": 22,
+        "precio": 300.0,
+        "color": "rojo",
+        "tamano": "30 cm" ,
+        "material": "cuero",
+        "marca": "pet"
+}
+
+{
+        "idPedido": 1,
+        "idUsuario": 1,
+        "idProducto": 1,
+        "estatus": 0,
+        "cantidad": 3,
+        "fecha": "",
+        "direccionEnvio": "libra"
+}

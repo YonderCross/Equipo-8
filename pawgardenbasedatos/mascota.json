@@ -1,0 +1,98 @@
+[
+    {
+        "idMascota": 1,
+        "idUsuario": 1,
+        "nombre": "Baki",
+        "edad": 2,
+        "raza": "criollo",
+        "sexo": "Hembra"
+    },
+    {
+        "idMascota": 2,
+        "idUsuario": 1,
+        "nombre": "Pocoyo",
+        "edad": 8,
+        "raza": "criollo",
+        "sexo": "Macho"
+    },
+    {
+        "idMascota": 1,
+        "idUsuario": 2,
+        "nombre": "Laika",
+        "edad": 5,
+        "raza": "criollo",
+        "sexo": "Hembra"
+    },
+
+
+{
+        "idMascota": 2,
+        "idUsuario": 2,
+        "nombre": "Tobyas",
+        "edad": 10,
+        "raza": "criollo",
+        "sexo": "Macho"
+    },
+
+{
+        "idMascota": 1,
+        "idUsuario": 3,
+        "nombre": "Micca",
+        "edad": 8,
+        "raza": "criollo",
+        "sexo": "Hembra"
+    },
+
+
+{
+        "idMascota": 1,
+        "idUsuario": 4,
+        "nombre": "Rufus",
+        "edad": 6,
+        "raza": "Presa Canario",
+        "sexo": "Macho"
+    },
+
+{
+        "idMascota": 2,
+        "idUsuario": 4,
+        "nombre": "Lovesmo",
+        "edad": 1,
+        "raza": "Chihuahua",
+        "sexo": "Macho"
+    },
+    {
+        "idMascota": 3,
+        "idUsuario": 4,
+        "nombre": "Max",
+        "edad": 3,
+        "raza": "criollo",
+        "sexo": "Macho"
+    },
+
+    {
+        "idMascota": 1,
+        "idUsuario": 5,
+        "nombre": "Chilaquil",
+        "edad": 10,
+        "raza": "chihuahua",
+        "sexo": "Macho"
+    },
+    {
+        "idMascota": 2,
+        "idUsuario": 5,
+        "nombre": "Tirrex",
+        "edad": 2,
+        "raza": "Pitbull",
+        "sexo": "Macho"
+    },
+    {
+        "idMascota": 1,
+        "idUsuario": 6,
+        "nombre": "Max",
+        "edad": 3,
+        "raza": "criollo",
+        "sexo": "Macho"
+    }
+
+]

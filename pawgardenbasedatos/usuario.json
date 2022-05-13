@@ -1,0 +1,106 @@
+[
+    {
+        "idUsuario": 1,
+        "nombre": "Aline",
+        "apellido1": "Reynoso",
+        "apellido2": "Rodríguez",
+        "correo": "alinerey@gmail.com",
+        "telefono": 3354878965,
+        "direccion": "calle Josefa col. Jardines no. 133",
+        "contrasena": "Narizdecoco29"
+    },
+    {
+        "idUsuario": 2,
+        "nombre": "Harry",
+        "apellido1": "Styles",
+        "apellido2": "Gómez",
+        "correo": "jarrystilos@gmail.com",
+        "telefono": 5587441232,
+        "direccion": "avenida Presa Osorio col. Babilonia no. 458",
+        "contrasena": "OneDirection78"
+    },
+    {
+        "idUsuario": 3,
+        "nombre": "Mario",
+        "apellido1": "Morales",
+        "apellido2": "Treviño",
+        "correo": "mamoratrevi@gmail.com",
+        "telefono": 5678960542,
+        "direccion": "calle Lomas de Sotero col. San juan de Aragon no. 560",
+        "contrasena": "MORALESbros22"
+    },
+
+    {
+        "idUsuario": 4,
+        "nombre": "Fernando",
+        "apellido1": "Olivares",
+        "apellido2": "Torres",
+        "correo": "Folivares@hotmail.com",
+        "telefono": 5654687062,
+        "direccion": "calle Victoria col. Frorida no. 4",
+        "contrasena": "FOT99fot"
+    },
+
+    {
+        "idUsuario": 5,
+        "nombre": "Mariana",
+        "apellido1": "Solis",
+        "apellido2": "Miranda",
+        "correo": "mmi_sun@gmail.com",
+        "telefono": 5565786022,
+        "direccion": "av. Las Torres col. Vicente Guerrero no.45",
+        "contrasena": "CorazonFELIX33"
+    },
+
+    {
+        "idUsuario": 6,
+        "nombre": "Monica",
+        "apellido1": "Olvera",
+        "apellido2": "Felix",
+        "correo": "momo.of@hotmail.com",
+        "telefono": 5645687932,
+        "direccion": "calle Zapateros col. Morelos no.33",
+        "contrasena": "soyAverngers"
+    },
+
+    {
+        "idUsuario": 7,
+        "nombre": "Antonio",
+        "apellido1": "Vicente",
+        "apellido2": "Guerrero",
+        "correo": "vicente.G@gmail.com",
+        "telefono": 5565448745,
+        "direccion": "calle Malinche col. Benito Juarez no.106",
+        "contrasena": "GUERREROguerrero23"
+    },
+    {
+        "idUsuario": 8,
+        "nombre": "Laura",
+        "apellido1": "Molina",
+        "apellido2": "Soria",
+        "correo": "lms@gmail.com",
+        "telefono": 5554213987,
+        "direccion": "calle monte casino col. Mirador no. 14",
+        "contrasena": "eperoacordarme00"
+    },
+    {
+        "idUsuario": 9,
+        "nombre": "Ismael",
+        "apellido1": "Martinez",
+        "apellido2": "Estrada",
+        "correo": "ismaestrada@gmail.com",
+        "telefono": 5554213987,
+        "direccion": "calle monte casino  no. 14",
+        "contrasena": "quenosemeolvide88"
+    },
+    {
+        "idUsuario": 10,
+        "nombre": "Alejandro",
+        "apellido1": "Sanchez",
+        "apellido2": "Sandoval",
+        "correo": "alesandoval@gmail.com",
+        "telefono": 55569874,
+        "direccion": "avenida vicentenario no 99 Azcapotzalco",
+        "contrasena": "yasuperlao111"
+    }
+]
