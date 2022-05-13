@@ -3,10 +3,13 @@ window.swiper = new Swiper({
     slideClass: "slider__slide",  // <-- No lleva punto
     createElements: true,
     autoplay: {
-        delay: 5000
+        delay: 3000
     }, 
     loop: true,
     spaceBetween: 0,
     pagination: true,
-    navigation: true
+    navigation: true,
+    slideShadows: true
+    
 });
+	
