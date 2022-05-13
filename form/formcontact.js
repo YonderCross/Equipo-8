@@ -5,12 +5,7 @@ const passc = document.getElementById("ccontraseña")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
 
-/*const nomb = document.getElementById("nombre").value
-const apell = document.getElementById("nombre").value
-const corr = document.getElementById("nombre").value
-const tel = document.getElementById("nombre").value
-const dire = document.getElementById("nombre").value
-const contra = document.getElementById("nombre").value*/
+
 
 form.addEventListener("submit", e=>{
     e.preventDefault()
@@ -33,7 +28,9 @@ form.addEventListener("submit", e=>{
     }
   
     else{
+        //registrar(nombr,apelli,corre,tele,dire,contras);
         parrafo.innerHTML = "Enviado"
+        registrar();
     }
 })
 
@@ -43,21 +40,25 @@ input.addEventListener('input',function(){
      this.value = this.value.slice(0,10); 
 })
 
-/*
+function mostrar(){
+    fetch("http://localhost:8080/usuario")
+        .then((data) => data.json())
+        .then((dataJson) => console.log(dataJson));
+    }
 function registrar(){
 
-    axios.post("http://localhost:8080/usuario",
+axios.post("http://localhost:8080/usuario",
 {
-    "idUsuario": getElementById.value,
-    "nombre": "Ale",
-    "apellido1": "Perez",
-    "apellido2": "Sandoval",
-    "correo": "alesandoval@gmail.com",
-    "telefono": 55569874,
-    "direccion": "avenida vicentenario no 99 Azcapotzalco",
-    "contrasena": "yasuperlao111"
+    "idUsuario": Math.random()*100,
+    "nombre": document.getElementById("nombre").value,
+    "apellido1": document.getElementById("apellidos").value,
+    "apellido2": "",
+    "correo": document.getElementById("correo").value,
+    "telefono": document.getElementById("numero").value,
+    "direccion": document.getElementById("direccion").value,
+    "contrasena": document.getElementById("contraseña").value
 }
     )
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
-}*/
+}
