@@ -1,5 +1,6 @@
 .Homepage {
     width: 100%;
+    height: 400px;
     align-items: center;
     flex-direction: row;
     text-align: center;
