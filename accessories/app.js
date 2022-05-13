@@ -7,7 +7,7 @@ const divCarrito = document.querySelector(".carrito");
 const botonVaciar = document.querySelector("#vaciar");
 const botonComprar = document.querySelector("#comprar");
 let articulosCarrito = [];
-let articulosjason = JSON.parse(agregarArticulo);
+
 
 function cargarEventListeners(){
     grid.addEventListener("click", agregarArticulo);   // <-- Ready for any click event
@@ -27,6 +27,10 @@ function cargarEventListeners(){
     tablaCarrito.addEventListener("click", eliminarArticulo);
     botonVaciar.addEventListener("click", vaciarCarrito);
     botonComprar.addEventListener("click", mostrarVentana);
+    document.addEventListener("DOMContentLoaded", ()=>{
+        articulosCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        construirCarritoHTML();
+    });
 }
 
 function agregarArticulo(e){
@@ -82,7 +86,7 @@ function construirCarritoHTML(){
        `;
        tablaCarrito.appendChild(tableRow);  // <--Ya creado el html lo inserta en la tabla
     });
-
+    sincronizarLocalStorage();
 }
 function saludar(){
     console.log("Saludar");
@@ -185,5 +189,8 @@ function construirTotal(){
     `;
     total.appendChild(totalResumen);
 
+}
+function sincronizarLocalStorage(){
+    localStorage.setItem( "carrito", JSON.stringify(articulosCarrito));
 }
 cargarEventListeners();
