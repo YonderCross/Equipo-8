@@ -1,11 +1,13 @@
 //Variables
+const body = document.querySelector("body");
 const  grid = document.querySelector(".accessories__grid");
 const shoppingCar = document.querySelector(".carrito__img");
 const tablaCarrito = document.querySelector(".carrito__tabla tbody");
 const divCarrito = document.querySelector(".carrito");
 const botonVaciar = document.querySelector("#vaciar");
-const botonComprar = document.querySelector("comprar");
+const botonComprar = document.querySelector("#comprar");
 let articulosCarrito = [];
+
 
 function cargarEventListeners(){
     grid.addEventListener("click", agregarArticulo);   // <-- Ready for any click event
@@ -24,6 +26,11 @@ function cargarEventListeners(){
     });
     tablaCarrito.addEventListener("click", eliminarArticulo);
     botonVaciar.addEventListener("click", vaciarCarrito);
+    botonComprar.addEventListener("click", mostrarVentana);
+    document.addEventListener("DOMContentLoaded", ()=>{
+        articulosCarrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        construirCarritoHTML();
+    });
 }
 
 function agregarArticulo(e){
@@ -79,7 +86,7 @@ function construirCarritoHTML(){
        `;
        tablaCarrito.appendChild(tableRow);  // <--Ya creado el html lo inserta en la tabla
     });
-
+    sincronizarLocalStorage();
 }
 function saludar(){
     console.log("Saludar");
@@ -102,4 +109,113 @@ function eliminarArticulo(e){
         construirCarritoHTML();
     }
 }
+function mostrarVentana(){
+    const overlay = document.createElement("div");
+    const overlaySecundario = document.createElement("div");
+    overlay.classList.add("overlay");
+    overlaySecundario.classList.add("overlay__comprar");
+    overlaySecundario.innerHTML = `
+        <h2 class="overlay__header">Finalizar Compra</h2>
+        <div class="overlay__contenido">
+            
+            <div class="overlay__cesta">
+                <h3 class="overlay__subtitulo">Su Cesta</h3>    
+                <div class="overlay__productos">
+                    
+
+                </div>
+            </div>
+            <div class="overlay__resumen">
+                <h3 class="overlay__subtitulo">Resumen del pedido</h3>
+                <div class="overlay__total">
+                    
+                </div>
+            </div>
+        </<div>    
+    `;
+    overlay.appendChild(overlaySecundario);
+    const botonCerrar = document.createElement('p');
+    botonCerrar.textContent = "X";
+    botonCerrar.classList.add('btn-cerrar');
+    botonCerrar.addEventListener("click", ()=>{
+        overlay.remove();
+    });
+    overlay.appendChild(botonCerrar);
+    body.appendChild(overlay);
+    construirPedido();
+
+}
+function construirPedido(){
+    articulosCarrito.forEach( (articulo)=>{
+        const {imagen, nombre, precio, color, cantidad, id} = articulo;
+        const productos = document.querySelector(".overlay__productos");
+        const producto = document.createElement("div");;
+        producto.classList.add("producto");
+        producto.innerHTML = `
+            <img class="producto__imagen" src="${imagen}" alt="productoComprar">
+            <div class="producto__texto">
+                <p class="producto__dessc"><strong>${nombre}</strong></p>
+                <p class="producto__dessc"><strong>Color: </strong>${color}</p>
+                <p class="producto__dessc"><strong>Cantidad: </strong>${cantidad}</p>
+                <p class="producto__dessc"><strong>Precio: </strong>$${precio}</p>
+                
+            </div>
+        `;
+        productos.appendChild(producto);
+        
+    });
+    construirTotal();
+}
+function construirTotal(){
+    const total = document.querySelector(".overlay__total");
+    const totalResumen = document.createElement("div");
+    let cantidad = 0;
+    let totalPedido = 0;
+    articulosCarrito.forEach( articulo=>{
+        totalPedido = parseFloat(articulo.cantidad) * parseFloat(articulo.precio);
+        cantidad = cantidad +  totalPedido; 
+    });
+    console.log(cantidad);
+    totalResumen.innerHTML = `
+        <p class="total__texto"><strong>Subtotal: </strong>${cantidad}</p>
+        <p class="total__texto"><strong>Entrega: </strong>$${250}</p>
+        <p class="total__texto"><strong>Cupón: </strong> Ninguno </p>
+        <p class="total__texto"><strong>Total </strong>${ cantidad + 250}</p>
+        <div class="total__botones">
+            <form>
+                <button class="boton__pagar" id="pagar" onclick="pagarCesta()">Pagar</button> 
+            </form>
+        </div>
+    `;
+    total.appendChild(totalResumen);
+
+}
+function sincronizarLocalStorage(){
+    localStorage.setItem( "carrito", JSON.stringify(articulosCarrito));
+}
 cargarEventListeners();
+
+/*+++++ PETICION FETCH *******/
+    /**Para hacer peticiones POST, fetch admite un segundo parametro.
+    fetch(url, {
+        method: "POST",
+        body: Los datos que enviemeos. Si es un objeto hay que con JSON.stringify(datos),
+        headers: {
+            cabecera de información sobre lo que  estamos enviando
+
+        }
+    })
+*/
+
+function pagarCesta(){
+   const carritoJSON = JSON.stringify(articulosCarrito) || [];
+   fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: carritoJSON, 
+    headers: {
+        "Content-type": "application/json" //<--Informamos que estamos enviando un objeto en formato JSON
+    }
+    })
+        .then(res => res.json())
+        .then(data => console.log(data))
+}

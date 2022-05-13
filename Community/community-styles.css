@@ -14,9 +14,11 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
 .us__content{
     background-color: #fff;
-    padding: 5rem;
+    padding: 3rem;
     grid-row: 3/4;
 }
 @media(min-width: 768px){
@@ -85,4 +87,8 @@ ul{
 }
 #slider__imagen{
     width: 120rem;
+}
+
+.container__amigos {
+    padding: 5.5rem;
 }
